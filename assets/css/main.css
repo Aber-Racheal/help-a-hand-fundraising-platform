@@ -1,10 +1,9 @@
 .navbar { 
-    padding: 10px 20px;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
     display: flex;
-    margin: 2%;
+    margin-top: 12px;
+    padding-bottom: 0%;
 }
 
 
@@ -75,7 +74,10 @@ padding: 20%;
 
 
 /* Empower Change Section */
-
+#empowerSection{
+top:0%;
+bottom: 10%;
+}
 
 .container {
     display: flex;
@@ -86,12 +88,12 @@ padding: 20%;
 }
 
 .empowerChange{
-width: 400px;
-height: 400px;
+width: 300px;
+height: 300px;
 left: 176px;
 border-radius: 600px;
 background: #3DD2511F;
-font-size: 39px;
+font-size: 22px;
 font-weight: 500;
 text-align: center;
 justify-content: center;
@@ -105,7 +107,7 @@ justify-content: center;
     display: flex;
     flex-direction: column;
     position: absolute;
-    gap: 350px;
+    gap: 270px;
     justify-content: space-between;
     justify-content: center;
     align-items: center;
@@ -149,7 +151,7 @@ font-size: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 300px;
+    gap: 205px;
     justify-content: center;
     top: 0px;
 }
@@ -161,10 +163,16 @@ font-size: 15px;
     font-size: 15px;
     border-radius: 25px;
     text-wrap: nowrap;
-    margin-left: 4%;
     padding:10px;
 }
 
+#childSupportAndFundraisingContainer{
+    gap: 223px;
+}
+
+#childSupport{
+    margin-left: 8%;
+}
 .medicalSupportAndChurch{
 display: flex;
 flex-direction: row;
@@ -178,7 +186,6 @@ gap: 30px;
     font-size: 15x;
     border-radius: 25px;
     text-wrap: nowrap;
-    margin-left: 4%;
     padding:10px;
 }
 
@@ -189,7 +196,6 @@ gap: 30px;
     font-size: 15x;
     border-radius: 25px;
     text-wrap: nowrap;
-    margin-left: 4%;
     padding:10px;  
 }
 
@@ -203,13 +209,14 @@ gap: 30px;
 
 
 #medicalSupportAndChurchContainer{
-gap: 550px;
-margin-left: -55px;
+gap: 510px;
+justify-content: center;
+align-items: center;
 }
 
 
 #birthdaysAndEmergencyContainer{
-    gap: 450px; 
+    gap: 300px; 
 }
 
 
@@ -224,13 +231,6 @@ margin-left: -55px;
     align-items: center;
     gap: 80px;
 }
-
-
-#kasasiraImg{
-    width: 40px;
-    height: 40px;
-}
-
 
 .greenBar{
     border: 2px solid #4B5320;
@@ -266,19 +266,29 @@ margin-left: -55px;
 
 
 #kasasira {
-width: 612px;
-height: 456px;
-top: 165px;
-left: -242px;
-gap: 0px;
-border-radius: 59px 0px 0px 0px;
-opacity: 0px;
+width: 500px;
+height: 500pxpx;
+border-radius: 59px;
 }
 
 .schoolAndRocketProject{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
+    padding: 5%;
+    margin-top: 4%;
+}
+
+
+#otimAndOcenInSchool{
+width: 300px;
+height: 300pxpx;
+}
+
+
+#rocketProject{
+    width: 300px;
+    height: 300pxpx;  
 }
 
 .fundRaise p{
@@ -316,7 +326,6 @@ background: #3DD251;
 color:#FFFFFF;
 border:#3DD251;
 }
-
 
 
 
@@ -407,7 +416,9 @@ height: 130px;
     flex-direction: row;
     background: #3DD2511F;
     gap: 70px;
-    padding: 5%;
+    padding: 10%;
+    padding-top: 2%;
+
 }
 
 
