@@ -115,134 +115,105 @@ justify-content: center;
 #searchBar{
 border-radius: 20px;
 width: 260px;
+height: 30px;
 border: #000000 solid 1px;
 text-align: center;
+font-size: 15px;
 }
 
 
 #startAGiveaHandBtn{
-    width: 260px;
-    height: 50px;
+    width: auto;
+    padding: 10px;
     border-radius: 59px;
     background: #3DD251;
     border: #3DD251;
     font-size: 20px;
-    font-weight: 700;
-    line-height: 29.05px;
-    text-align: left;
     color: #FFFFFF;
     text-align: center;
+    font-weight: 500;
 }
 
-
-.fundraiseItems{
+#fundraisingIdeas{
     display: flex;
     flex-direction: column;
+    gap: 40px;
     position: absolute;
     justify-content: space-between;
     justify-content: center;
     align-items: center; 
 }
 
-.childSupportAndFundraisingContainer{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-gap: 410px;
-justify-content: center;
-position: absolute;
-top: 0px;
-margin-top: 40%;
+
+.fundraisingIdeasContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 300px;
+    justify-content: center;
+    top: 0px;
 }
 
-
-#childSupport{
-border: #3DD251 2px solid;
-width: 30%;
-height: 50px;
-padding: 10px;
-border-radius: 25px;
-text-wrap: nowrap;
-margin-left: 4%;
-}
-
-#tuitionFundraising{
+.fundraisingIdeasDivs{
     border: #3DD251 2px solid;
-    width: 30%;
-    height: 50px;
-    padding: 10px;
-    border-radius: 25px;
-    text-wrap: nowrap;
-    margin-left: 2%;
-}
-
-
-.medicalSupportAndChurchContainer{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-gap: 410px;
-justify-content: center;
-position: absolute;
-margin-top: 60%;
-}
-
-
-#medicalSupport{
-    border: #3DD251 2px solid;
-    width: 30%;
-    height: 50px;
-    padding: 10px;
+    width: auto;
+    height: auto;
+    font-size: 15px;
     border-radius: 25px;
     text-wrap: nowrap;
     margin-left: 4%;
+    padding:10px;
+}
+
+.medicalSupportAndChurch{
+display: flex;
+flex-direction: row;
+gap: 30px;
+}
+
+#medicalSupport{
+    border: #3DD251 2px solid;
+    width: auto;
+    height: 40px;
+    font-size: 15x;
+    border-radius: 25px;
+    text-wrap: nowrap;
+    margin-left: 4%;
+    padding:10px;
 }
 
 #church{
     border: #3DD251 2px solid;
-    width: 30%;
-    height: 50px;
-    padding: 10px;
+    width: auto;
+    height: 40px;
+    font-size: 15x;
     border-radius: 25px;
     text-wrap: nowrap;
     margin-left: 4%;
+    padding:10px;  
 }
 
 
 
-.birthdaysAndEmergencyContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 410px;
-    justify-content: center;
-    position: absolute;
-    margin-top: 80%;
-}
-
-#birthdays{
-    border: #3DD251 2px solid;
-    width: 30%;
+.medicalChurchImg{
+    width: 50px;
     height: 50px;
-    padding: 10px;
-    border-radius: 25px;
-    text-wrap: nowrap;
-    margin-left: 4%;
+
 }
 
 
-#emergency{
-    border: #3DD251 2px solid;
-    width: 30%;
-    height: 50px;
-    padding: 10px;
-    border-radius: 25px;
-    text-wrap: nowrap;
-    margin-left: 4%;
+#medicalSupportAndChurchContainer{
+gap: 550px;
+margin-left: -55px;
 }
 
 
- 
+#birthdaysAndEmergencyContainer{
+    gap: 450px; 
+}
+
+
+
 
 
 /* FundRaise Section */
@@ -255,11 +226,17 @@ margin-top: 60%;
 }
 
 
+#kasasiraImg{
+    width: 40px;
+    height: 40px;
+}
+
+
 .greenBar{
     border: 2px solid #4B5320;
     width: 5%;
-    margin-left: 65%;  /* Auto margin to center the element */
-    margin-right: auto; /* Auto margin to center the element */
+    margin-left: 65%;  
+    margin-right: auto; 
 }
 
 
