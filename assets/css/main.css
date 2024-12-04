@@ -124,7 +124,7 @@ font-size: 15px;
 }
 
 
-#startAGiveaHandBtn{
+.startAGiveaHandBtn{
     width: auto;
     padding: 10px;
     border-radius: 59px;
@@ -420,14 +420,7 @@ height: 130px;
     padding-top: 2%;
 
 }
-
-
-
-
-
-
 /* Start a campaign section */
-
 
 #startCampaignSection{
     margin-top: 5%;
@@ -482,3 +475,214 @@ text-align: center;
 
 }
 
+
+
+
+
+
+
+/* Cause to fundraise CSS*/
+
+.causeToFundraiseSection{
+    display: flex;
+    gap: 150px;
+    padding: 8px 50px 0px 50px;
+}
+
+#fundraiseDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 18px;
+}
+
+
+#causeToFundraiseImg {
+    position: relative;
+    height: 550px;
+}
+
+.fundraiseHeadings{
+color:#01405F;
+font-size: 20px;
+}
+
+
+#helpahandLogo{
+    width: 10%;
+    margin-left: 35%;
+}
+
+.categoryRadioLabel {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: inline-block;
+}
+.categoryRadioLabel:hover {
+    background-color: #3DD251;
+}
+input[type="radio"]:checked + .categoryRadioLabel {
+    color: #000000;
+    border: #3DD251 2px solid;
+}
+
+
+.yourLocation{
+    color: #000000;
+    border: #3DD251 1px solid;  
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    width: 50%;
+}
+
+
+#rightArrowBtn{
+    background-color: #3DD251;
+    border: 2px  #3DD251 solid;
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    margin-left: 25%;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+/* Who are you fundraising for */
+#causeToFundraiseSection{
+    margin-top: 32px;
+    padding-left: 8%;
+}
+
+#whoFundraise{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+
+#fundraiseFor{
+display: flex;
+gap: 55px;
+}
+
+
+
+#fundraiseForLabel{
+    margin-top: 10%;
+}
+
+.setAGoalBtn{
+    width: 300px;
+    margin: 10px 10px 10px 0px;
+}
+
+
+.fundraiseForImgs{
+    width: 60px;
+    height: 60px;;
+}
+
+#fundraiseHeartAndHands{
+    margin-top: 10%;
+}
+
+
+
+
+/* Build your fundraise profile */
+#buildYourFundraiseProfile{
+margin-top: 30px;
+padding: 50px;
+margin-left: 5%;
+}
+
+
+#buildFundraiseHeading{
+margin-left: 40px;
+font-size: 30px;
+padding-bottom: 2%;
+}
+
+#imageAndDonate{
+    display: flex;
+    gap: 210px;
+top: 0%;
+}
+
+#imageAndBtn{
+display: flex;
+flex-direction: column;
+gap: 80px;
+}
+
+
+#submitReview{
+    width: 350px;
+}
+
+
+#typeAStory{
+    border-radius: 40px;
+    border: 1px #3DD251 solid;
+    padding: 5%;
+}
+
+#donateToSupportInput{
+    width: 430px;
+}
+
+#titleAndStory{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.uploadContainer {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #3DD251;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    color: #888;
+    cursor: pointer;
+    position: relative;
+    background-color: #f9f9f9;
+  }
+
+  .uploadContainer.hover {
+    background-color: #e0e0e0;
+    border-color: #aaa;
+  }
+
+  .uploadContainer img {
+    max-width: 100%;
+    max-height: 100%;
+    display: none;
+  }
+
+  .uploadInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .uploadText {
+    display: block;
+    padding: 10px;
+  }
