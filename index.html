@@ -139,23 +139,11 @@
           <img id="kasasira" src="assets\img\kasasira.png" alt="Kasasira" />
           <p>Save Kasasira From Cancer Funderiaser</p>
 
-          <div class="barsAndAmountButtons">
-            <div class="bars">
-              <div class="greenBar"></div>
-              <div>
-                <progress
-                  class="progressBar"
-                  role="progressbar"
-                  aria-valuenow="70"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></progress>
-              </div>
-            </div>
-            <div>
-              <button class="priceButton">400,000 ugx</button>
-            </div>
-          </div>
+          <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+            <span class="goal-label" id="goal-label"></span>
+            <div id="progress-info">$0 / $0</div>
+        </div>
         </div>
 
         <div class="schoolAndRocketProject">
@@ -166,48 +154,22 @@
               id="otimAndOcenInSchool"
             />
             <p>Keep Otim and Ocen in school</p>
-            <div class="barsAndAmountButtons">
-              <div class="greenBar"></div>
-              <div class="greenBarAndProgressBar">
-                <progress
-                  id="progressBar"
-                  class="progressBar"
-                  role="progressbar"
-                  aria-valuenow="70"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></progress>
-                <div>
-                  <button class="priceButtonSchoolAndRocketProject">
-                    150,000 ugx
-                  </button>
-                </div>
-              </div>
-            </div>
+            <div class="progress-container">
+              <div class="progress-bar" id="progress-bar1"></div>
+              <span class="goal-label" id="goal-label"></span>
+              <div id="progress-info1">$0 / $0</div>
+          </div>
           </div>
 
           <div class="rocketProject">
             <img src="assets\img\rocket.png" alt="Onen's Rocket Project" id="rocketProject"/>
             <p>Fund Onen’s Rocket Project</p>
 
-            <div class="barsAndAmountButtons">
-              <div class="greenBar"></div>
-              <div class="greenBarAndProgressBar">
-                <progress
-                  id="progressBar"
-                  class="progressBar"
-                  role="progressbar"
-                  aria-valuenow="70"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></progress>
-                <div>
-                  <button class="priceButtonSchoolAndRocketProject">
-                    150,000 ugx
-                  </button>
-                </div>
-              </div>
-            </div>
+            <div class="progress-container">
+              <div class="progress-bar" id="progress-bar2"></div>
+              <span class="goal-label" id="goal-label"></span>
+              <div id="progress-info2">$0 / $0</div>
+          </div>
           </div>
         </div>
       </div>
@@ -267,6 +229,11 @@
           help to save their life. The cost of treatment is overwhelming, and
           every contribution brings them closer to healing.
         </p>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress-bar3"></div>
+          <span class="goal-label" id="goal-label"></span>
+          <div id="progress-info3">$0 / $0</div>
+      </div>
       </div>
     </section>
 
@@ -323,5 +290,48 @@
         </p>
       </div>
     </section>
+
+
+
+
+    <script>
+      // Dummy data
+      const goal = 20000; // Replace with PHP value later
+      let progress = 5000; // Replace with PHP value later
+
+      // Initialize progress bar
+      document.getElementById("progress-info").innerText = `$${progress.toLocaleString()} / $${goal.toLocaleString()}`;
+      //document.getElementById("goal-label").innerText = `$${goal.toLocaleString()}`;
+      document.getElementById("progress-bar").style.width = (progress / goal) * 100 + "%";
+      document.getElementById("progress-info1").innerText = `$${progress.toLocaleString()} / $${goal.toLocaleString()}`;
+      //document.getElementById("goal-label").innerText = `$${goal.toLocaleString()}`;
+      document.getElementById("progress-bar1").style.width = (progress / goal) * 100 + "%";
+      document.getElementById("progress-info2").innerText = `$${progress.toLocaleString()} / $${goal.toLocaleString()}`;
+      //document.getElementById("goal-label").innerText = `$${goal.toLocaleString()}`;
+      document.getElementById("progress-bar2").style.width = (progress / goal) * 100 + "%";
+      document.getElementById("progress-info3").innerText = ` $${progress.toLocaleString()} / $${goal.toLocaleString()}`;
+      //document.getElementById("goal-label").innerText = `$${goal.toLocaleString()}`;
+      document.getElementById("progress-bar3").style.width = (progress / goal) * 100 + "%";
+
+      // Update progress
+      function updateProgress() {
+          const input = document.getElementById("user-contribution").value;
+          const contribution = parseFloat(input);
+
+          if (!isNaN(contribution) && contribution > 0) {
+              progress += contribution;
+              if (progress > goal) progress = goal;
+
+              const progressPercentage = (progress / goal) * 100;
+              document.getElementById("progress-bar").style.width = progressPercentage + "%";
+              document.getElementById("progress-info").innerText = `Progress: $${progress.toLocaleString()} / $${goal.toLocaleString()}`;
+          } else {
+              alert("Please enter a valid contribution amount.");
+          }
+
+          // Clear input field
+          document.getElementById("user-contribution").value = "";
+      }
+  </script>
   </body>
 </html>

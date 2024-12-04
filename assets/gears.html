@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gear Chart Designs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f3f4f6;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .gear-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            margin: 50px 0;
+        }
+
+        .gear {
+            width: 100px;
+            height: 100px;
+            background-color: #f1c40f;
+            border-radius: 50%;
+            border: 10px solid #f39c12;
+            position: relative;
+            animation: rotate 2s infinite linear;
+        }
+
+        .gear#gear2 {
+            animation: rotate 2s infinite reverse linear;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .gear-chart {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        #gearNetwork {
+            height: 400px;
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Gear Chart Designs</h1>
+
+    <!-- Rotating Gear (CSS) -->
+    <div class="gear-container">
+        <div class="gear" id="gear1"></div>
+        <div class="gear" id="gear2"></div>
+    </div>
+
+    <!-- Circular Gear-Like Chart (Chart.js) -->
+    <h2>Gear-like Circular Chart (Chart.js)</h2>
+    <canvas id="myChart" class="gear-chart"></canvas>
+
+    <!-- Interconnected Gear Network (D3.js) -->
+    <h2>Interconnected Gear Network (D3.js)</h2>
+    <div id="gearNetwork"></div>
+
+    <!-- Including Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Including D3.js -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+    <script>
+        // Chart.js Gear-like Circular Chart
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Red', 'Blue', 'Green'],
+                datasets: [{
+                    label: 'My First Dataset',
+                    data: [300, 50, 100],
+                    backgroundColor: ['#e74c3c', '#3498db', '#2ecc71'],
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                cutoutPercentage: 70,
+                responsive: true
+            }
+        });
+
+        // D3.js Interconnected Gear Network
+        var svg = d3.select("#gearNetwork");
+
+        const gears = [
+            { id: "gear1", x: 150, y: 150, radius: 40, color: "#e74c3c" },
+            { id: "gear2", x: 300, y: 150, radius: 40, color: "#3498db" },
+            { id: "gear3", x: 450, y: 150, radius: 40, color: "#2ecc71" }
+        ];
+
+        const connections = [
+            { source: "gear1", target: "gear2" },
+            { source: "gear2", target: "gear3" }
+        ];
+
+        svg.selectAll("circle")
+            .data(gears)
+            .enter()
+            .append("circle")
+            .attr("cx", d => d.x)
+            .attr("cy", d => d.y)
+            .attr("r", d => d.radius)
+            .attr("fill", d => d.color);
+
+        svg.selectAll("line")
+            .data(connections)
+            .enter()
+            .append("line")
+            .attr("x1", d => gears.find(g => g.id === d.source).x)
+            .attr("y1", d => gears.find(g => g.id === d.source).y)
+            .attr("x2", d => gears.find(g => g.id === d.target).x)
+            .attr("y2", d => gears.find(g => g.id === d.target).y)
+            .attr("stroke", "#2c3e50")
+            .attr("stroke-width", 2);
+    </script>
+</body>
+</html>
