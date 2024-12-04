@@ -1,0 +1,484 @@
+.navbar { 
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 12px;
+    padding-bottom: 0%;
+}
+
+
+.navItems{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+
+.navItems ul{
+    display: flex;
+    gap: 60px;
+}
+
+
+.navItems ul li{
+    list-style-type: none ;
+}
+
+.navItems ul li a{
+    width: 350px;
+    height: 56px;
+    font-weight: 500;
+    font-family: poppins, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 27.84px;
+    color:#000000;
+}
+
+
+#helpahelper{
+background-color: #3DD251;
+width: 350px;
+height: 56px;
+border: solid 2px #3DD251;
+border-radius: 59px;
+text-decoration: none;
+color:white;
+padding: 5px;
+}
+
+.profileIcon{
+    width: 56px;
+    height: 56px;
+
+}
+
+
+.organizaionIcon{
+width: 56px;
+height: 56px;
+border-radius: 50px;
+background: #3DD251;
+}
+
+#logoInGreenCircle{
+padding: 20%;
+}
+
+#logoInNavHelper{
+    width: 15%; 
+    margin: 3%;
+}
+
+
+
+/* Empower Change Section */
+#empowerSection{
+top:0%;
+bottom: 10%;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+    position: relative;
+}
+
+.empowerChange{
+width: 300px;
+height: 300px;
+left: 176px;
+border-radius: 600px;
+background: #3DD2511F;
+font-size: 22px;
+font-weight: 500;
+text-align: center;
+justify-content: center;
+display: flex;           
+align-items: center;    
+justify-content: center;
+}
+    
+
+#searchBarAndBtn{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 270px;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#searchBar{
+border-radius: 20px;
+width: 260px;
+height: 30px;
+border: #000000 solid 1px;
+text-align: center;
+font-size: 15px;
+}
+
+
+#startAGiveaHandBtn{
+    width: auto;
+    padding: 10px;
+    border-radius: 59px;
+    background: #3DD251;
+    border: #3DD251;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 500;
+}
+
+#fundraisingIdeas{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: absolute;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.fundraisingIdeasContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 205px;
+    justify-content: center;
+    top: 0px;
+}
+
+.fundraisingIdeasDivs{
+    border: #3DD251 2px solid;
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    border-radius: 25px;
+    text-wrap: nowrap;
+    padding:10px;
+}
+
+#childSupportAndFundraisingContainer{
+    gap: 223px;
+}
+
+#childSupport{
+    margin-left: 8%;
+}
+.medicalSupportAndChurch{
+display: flex;
+flex-direction: row;
+gap: 30px;
+}
+
+#medicalSupport{
+    border: #3DD251 2px solid;
+    width: auto;
+    height: 40px;
+    font-size: 15x;
+    border-radius: 25px;
+    text-wrap: nowrap;
+    padding:10px;
+}
+
+#church{
+    border: #3DD251 2px solid;
+    width: auto;
+    height: 40px;
+    font-size: 15x;
+    border-radius: 25px;
+    text-wrap: nowrap;
+    padding:10px;  
+}
+
+
+
+.medicalChurchImg{
+    width: 50px;
+    height: 50px;
+
+}
+
+
+#medicalSupportAndChurchContainer{
+gap: 510px;
+justify-content: center;
+align-items: center;
+}
+
+
+#birthdaysAndEmergencyContainer{
+    gap: 300px; 
+}
+
+
+
+
+
+/* FundRaise Section */
+.fundRaise{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.greenBar{
+    border: 2px solid #4B5320;
+    width: 5%;
+    margin-left: 65%;  
+    margin-right: auto; 
+}
+
+
+.barsAndAmountButtons{
+    display: flex;
+    flex-direction: row;
+}
+
+.bars{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.progressBar {
+    width: 70%;
+    height: 10px; 
+    background-color: #4B5320; 
+    border-radius: 1px; 
+  }
+  
+  .progressBar::after {
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+
+#kasasira {
+width: 500px;
+height: 500pxpx;
+border-radius: 59px;
+}
+
+.schoolAndRocketProject{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5%;
+    margin-top: 4%;
+}
+
+
+#otimAndOcenInSchool{
+width: 300px;
+height: 300pxpx;
+}
+
+
+#rocketProject{
+    width: 300px;
+    height: 300pxpx;  
+}
+
+.fundRaise p{
+width: 319px;
+height: 26px;
+top: 380px;
+left: 536px;
+gap: 0px;
+font-size: 18px;
+font-weight: 500;
+line-height: 24.2px;
+text-align: left;
+}
+
+
+.priceButton{
+    background-color: #3DD251;
+    width: 150px;
+    height: 40px;
+    border: solid 2px #3DD251;
+    border-radius: 59px;
+    text-decoration: none;
+    color:white;
+    padding: 5px;
+}
+
+.priceButtonSchoolAndRocketProject{
+width: 132px;
+height: 30px;
+top: 406px;
+left: 814px;
+gap: 0px;
+border-radius: 59px;
+background: #3DD251;
+color:#FFFFFF;
+border:#3DD251;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#transactionsDonarsEasySection{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-content: center;
+justify-content: space-evenly;
+margin: 5%;
+}
+
+
+.numberBtn{
+color: white;
+font-weight: bold;
+border: solid 2px #01405F;
+background: #01405F;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+}
+
+
+#transactionsDonarsEasy{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+
+.pictureAndParagraph{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.paragrapghs{
+    margin-top: 5%;
+    font-weight: 500;
+text-align: center;
+}
+
+#easyToYouImgdiv{
+border: 1.5px solid #3DD251;
+width: 220px;
+border-radius: 50px;
+height: 130px;
+}
+
+
+#easyToYouImg{
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#urgentCause{
+    display: flex;
+    flex-direction: row;
+    background: #3DD2511F;
+    gap: 70px;
+    padding: 10%;
+    padding-top: 2%;
+
+}
+
+
+
+
+
+
+/* Start a campaign section */
+
+
+#startCampaignSection{
+    margin-top: 5%;
+}
+
+#startCampaignHeading{
+text-align: center;
+}
+
+
+#campaignCategories{
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.campaignCategoriesHeading{
+    text-align: center;
+    color: #01405F;
+    font-weight: 450;
+    margin-top: 5%;
+}
+
+#greenLines{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0%;
+  margin: 3%;
+  justify-content: space-between;
+  padding: 0%;
+}
+
+
+.greenLine{
+    border: 1px solid #3DD251;
+    width: 30%;
+}
+
+
+#campaignParagraphs{
+    display: flex;
+    padding: 5%;
+    justify-content: space-between;
+}
+
+
+.campaignParagraph{
+    text-align: center;
+
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Progress Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .progress-container {
+            width: 80%;
+            background-color: #e0e0e0;
+            border-radius: 25px;
+            margin: 20px auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress-bar {
+            height: 30px;
+            width: 0%;
+            background: linear-gradient(90deg, #4caf50, #8bc34a);
+            transition: width 0.3s;
+        }
+        .goal-label {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+        #progress-info {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        input[type="number"] {
+            width: 200px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Goal Progress</h1>
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+        <span class="goal-label" id="goal-label"></span>
+    </div>
+    <div id="progress-info">Progress: $0 / $0</div>
+    
+  
+    <script>
+        // Dummy data
+        const goal = 20000; // Replace with PHP value later
+        let progress = 5000; // Replace with PHP value later
+
+        // Initialize progress bar
+        document.getElementById("progress-info").innerText = `Progress: $${progress.toLocaleString()} / $${goal.toLocaleString()}`;
+        document.getElementById("goal-label").innerText = `$${goal.toLocaleString()}`;
+        document.getElementById("progress-bar").style.width = (progress / goal) * 100 + "%";
+
+        // Update progress
+        function updateProgress() {
+            const input = document.getElementById("user-contribution").value;
+            const contribution = parseFloat(input);
+
+            if (!isNaN(contribution) && contribution > 0) {
+                progress += contribution;
+                if (progress > goal) progress = goal;
+
+                const progressPercentage = (progress / goal) * 100;
+                document.getElementById("progress-bar").style.width = progressPercentage + "%";
+                document.getElementById("progress-info").innerText = `Progress: $${progress.toLocaleString()} / $${goal.toLocaleString()}`;
+            } else {
+                alert("Please enter a valid contribution amount.");
+            }
+
+            // Clear input field
+            document.getElementById("user-contribution").value = "";
+        }
+    </script>
+</body>
+</html>
