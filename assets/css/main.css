@@ -1,3 +1,10 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+
+/* Navigation Section */
 .navbar { 
     align-items: center;
     justify-content: space-between;
@@ -7,7 +14,7 @@
 }
 
 
-.navItems{
+.nav-items{
     display: flex;
     flex-direction: row;
     flex-grow: 1;
@@ -15,17 +22,17 @@
 }
 
 
-.navItems ul{
+.nav-items ul{
     display: flex;
     gap: 60px;
 }
 
 
-.navItems ul li{
+.nav-items ul li{
     list-style-type: none ;
 }
 
-.navItems ul li a{
+.nav-items ul li a{
     width: 350px;
     height: 56px;
     font-weight: 500;
@@ -37,7 +44,7 @@
 }
 
 
-#helpahelper{
+#help-a-helper{
 background-color: #3DD251;
 width: 350px;
 height: 56px;
@@ -48,50 +55,29 @@ color:white;
 padding: 5px;
 }
 
-.profileIcon{
-    width: 80px;
-    height: 80px;
-
-}
-
-
-.organizaionIcon{
-width: 40px;
-height: 40px;
-border-radius: 50px;
-background: #3DD251;
-}
-
-#logoInGreenCircle{
+#logo-in-green-circle{
 margin-bottom: 20px;
 width: 35px;
 height: 35px;
-margin-left: 30px;
-
-
-}
-#logoInGreenCircle1{
-margin-bottom: 20px;
-width: 35px;
-height: 35px;
-margin-right: 30px;
-
-
+margin-left: 30px
 }
 
-#logoInNavHelper{
+
+#logo-in-nav-helper{
     width: 15%; 
     margin: 3%;
 }
+  /*End of  Navigation Section */
 
 
 
 /* Empower Change Section */
-#empowerSection{
-top:0%;
-bottom: 10%;
+#empower-section {
+        top: 0;
+        left: 0;
+        width: 100%;
 }
-
+  
 .container {
     display: flex;
     justify-content: center; 
@@ -100,10 +86,9 @@ bottom: 10%;
     position: relative;
 }
 
-.empowerChange{
+.empower-change{
 width: 300px;
 height: 300px;
-left: 176px;
 border-radius: 600px;
 background: #3DD2511F;
 font-size: 22px;
@@ -115,41 +100,62 @@ align-items: center;
 justify-content: center;
 }
     
+.bi-search {
+    color: #3DD251; 
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+  }
+  
+  .bi-search:hover {
+    color: #28a745; 
+  }
+  
 
-#searchBarAndBtn{
+  li {
+  padding: 10px;
+}
+
+#start-a-give-a-hand-btn{
     display: flex;
-    flex-direction: column;
     position: absolute;
-    gap: 270px;
     justify-content: space-between;
     justify-content: center;
     align-items: center;
 }
 
 
-#searchBar{
-border-radius: 20px;
-width: 260px;
-height: 30px;
-border: #000000 solid 1px;
-text-align: center;
-font-size: 15px;
+#search-bar{
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: 10px 0px 0px 10px;
 }
 
 
-.startAGiveaHandBtn{
+
+#search-bar:focus {
+    outline: none;
+    border-color: #3DD251;
+    box-shadow: 0 0 5px rgba(61, 210, 81, 0.5);
+  }
+
+
+.start-a-give-a-hand-btn{
     width: auto;
     padding: 10px;
     border-radius: 59px;
     background: #3DD251;
     border: #3DD251;
-    font-size: 20px;
+    font-size: 15px;
     color: #FFFFFF;
     text-align: center;
     font-weight: 500;
+    margin-top: 300px;
 }
 
-#fundraisingIdeas{
+#fundraising-ideas{
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -160,7 +166,7 @@ font-size: 15px;
 }
 
 
-.fundraisingIdeasContainer{
+.fundraising-ideas-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -169,7 +175,7 @@ font-size: 15px;
     top: 0px;
 }
 
-.fundraisingIdeasDivs{
+.fundraising-ideas-divs{
     border: #3DD251 2px solid;
     width: auto;
     height: auto;
@@ -179,20 +185,20 @@ font-size: 15px;
     padding:10px;
 }
 
-#childSupportAndFundraisingContainer{
+#child-support-and-fundraising-container{
     gap: 223px;
 }
 
-#childSupport{
+#child-support{
     margin-left: 8%;
 }
-.medicalSupportAndChurch{
+.medical-support-and-church{
 display: flex;
 flex-direction: row;
 gap: 30px;
 }
 
-#medicalSupport{
+#medical-support{
     border: #3DD251 2px solid;
     width: auto;
     height: 40px;
@@ -214,63 +220,44 @@ gap: 30px;
 
 
 
-.medicalChurchImg{
+.medical-church-img{
     width: 50px;
     height: 50px;
 
 }
 
 
-#medicalSupportAndChurchContainer{
+#medical-support-and-church-container{
 gap: 510px;
 justify-content: center;
 align-items: center;
 }
 
 
-#birthdaysAndEmergencyContainer{
+#birthdays-and-emergency-container{
     gap: 300px; 
 }
 
-
+/* End od empower section */
 
 
 
 /* FundRaise Section */
-.fundRaise{
+.fund-raise{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 200px;
+    padding: 0%;
+    top: 0%;
 }
-
-.greenBar{
-    border: 2px solid #4B5320;
-    width: 5%;
-    margin-left: 65%;  
-    margin-right: auto; 
-}
-
-
-.barsAndAmountButtons{
-    display: flex;
-    flex-direction: row;
-}
-
-.bars{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 
 .progress-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 300px;
-
     border-radius: 10px;
    margin-bottom: 10px;
     overflow: hidden;
@@ -304,12 +291,12 @@ align-items: center;
 
 
 #kasasira {
-width: 500px;
-height: 500pxpx;
-border-radius: 59px;
+width: 350px;
+height: 350pxpx;
+border-radius: 40px;
 }
 
-.schoolAndRocketProject{
+.school-and-rocket-project{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -318,52 +305,20 @@ border-radius: 59px;
 }
 
 
-#otimAndOcenInSchool{
-width: 300px;
-height: 300pxpx;
+.school-and-rocket-project{
+width: 250px;
+height: 250pxpx;
 }
 
-
-#rocketProject{
-    width: 300px;
-    height: 300pxpx;  
-}
-
-.fundRaise p{
-width: 319px;
-height: 26px;
-top: 380px;
-left: 536px;
-gap: 0px;
+.fund-raise p{
+text-wrap: nowrap;
 font-size: 18px;
 font-weight: 500;
-line-height: 24.2px;
+margin-top: 5%;
 text-align: left;
 }
 
 
-.priceButton{
-    background-color: #3DD251;
-    width: 150px;
-    height: 40px;
-    border: solid 2px #3DD251;
-    border-radius: 59px;
-    text-decoration: none;
-    color:white;
-    padding: 5px;
-}
-
-.priceButtonSchoolAndRocketProject{
-width: 132px;
-height: 30px;
-top: 406px;
-left: 814px;
-gap: 0px;
-border-radius: 59px;
-background: #3DD251;
-color:#FFFFFF;
-border:#3DD251;
-}
 
 
 
@@ -374,21 +329,20 @@ border:#3DD251;
 
 
 
+/* transactions-donars-easy-section*/
 
-
-
-
-#transactionsDonarsEasySection{
+#transactions-donars-easy-section{
 display: flex;
 flex-direction: row;
 justify-content: center;
 align-content: center;
 justify-content: space-evenly;
 margin: 5%;
+gap: 5px;
 }
 
 
-.numberBtn{
+.number-btn{
 color: white;
 font-weight: bold;
 border: solid 2px #01405F;
@@ -399,14 +353,14 @@ height: 40px;
 }
 
 
-#transactionsDonarsEasy{
+#transactions-donars-easy{
     display: flex;
     flex-direction: row;
     gap: 25px;
 }
 
 
-.pictureAndParagraph{
+.picture-and-paragraph{
     display: flex;
     flex-direction: column;
 }
@@ -418,7 +372,7 @@ height: 40px;
 text-align: center;
 }
 
-#easyToYouImgdiv{
+#easy-to-you-img-div{
 border: 1.5px solid #3DD251;
 width: 220px;
 border-radius: 50px;
@@ -426,108 +380,120 @@ height: 130px;
 }
 
 
-#easyToYouImg{
+#easy-to-you-img{
     border-radius: 50px;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#urgentCause{
+/* Urgent Cause */
+#urgent-cause{
     display: flex;
     flex-direction: row;
     background: #3DD2511F;
-    gap: 70px;
-    padding: 10%;
-    padding-top: 2%;
-
+    gap: 200px;
+    padding: 2% 10% 2% 10%;
+    
 }
+
+
+.urgent-cause-heading{
+    font-size: 25px;
+    padding-bottom: 5%;
+}
+
+#save-kasasira-paragraph{
+    margin-top: 10%;
+}
+
+
+#progress-container{
+    margin-top: 20%;
+}
+
 /* Start a campaign section */
 
-#startCampaignSection{
+#start-campaign-section{
     margin-top: 5%;
 }
 
-#startCampaignHeading{
+#start-campaign-heading{
 text-align: center;
+font-size: 30px;
 }
 
 
-#campaignCategories{
+#campaign-categories{
     display: flex;
     flex-direction: row;
-    padding: 5%;
-    margin: auto;
-    justify-content: space-between;
+    margin: 5% 5% 0% 5%;
+    justify-content: center;
+    gap: 200px;
 }
 
-.campaignCategoriesHeading{
+.campaign-categories-heading{
     text-align: center;
     color: #01405F;
-    font-weight: 450;
+    font-weight: 600;
     margin-top: 5%;
+    font-size: 20px;
 }
 
-#greenLines{
+#green-lines{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 0%;
-  margin: 3%;
-  justify-content: space-between;
-  padding: 0%;
+  gap: 100px;
+  justify-content: center;
 }
 
 
-.greenLine{
+.green-line{
     border: 1px solid #3DD251;
-    width: 30%;
+    width: 20%;
+    padding: 0%;
+    margin: 0%
 }
 
 
-#campaignParagraphs{
-    display: flex;
-    padding: 5%;
-    justify-content: space-between;
+#campaign-paragraphs{
+display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+  margin: 1% 0% 1% 0%;
+  padding-bottom: 5%;
 }
 
 
-.campaignParagraph{
+.campaign-paragraph{
     text-align: center;
+    max-width: 20%;
+    margin: 0% 0% 0% 0%;
+    font-size: 15px;
 
+}
+
+.campaign-images{
+    width: 150px;
+    height: 150px;
+    margin: 5%;
 }
 
 
 
 
 
-
-
+/* NEW PAGE */
 /* Cause to fundraise CSS*/
 
-.causeToFundraiseSection{
+.cause-to-fundraise-section{
     display: flex;
     gap: 150px;
     padding: 8px 50px 0px 50px;
 }
 
-#fundraiseDiv{
+#fundraise-div{
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -535,39 +501,40 @@ text-align: center;
 }
 
 
-#causeToFundraiseImg {
+#cause-to-fundraise-img {
     position: relative;
     height: 550px;
 }
 
-.fundraiseHeadings{
+.fundraise-headings{
 color:#01405F;
 font-size: 20px;
 }
 
 
-#helpahandLogo{
+#help-a-hand-logo{
     width: 10%;
     margin-left: 35%;
 }
 
-.categoryRadioLabel {
+.category-radio-label {
     padding: 10px 20px;
     margin: 5px;
     border-radius: 25px;
     cursor: pointer;
     display: inline-block;
 }
-.categoryRadioLabel:hover {
+.category-radio-label:hover {
     background-color: #3DD251;
 }
-input[type="radio"]:checked + .categoryRadioLabel {
+
+input[type="radio"]:checked + .category-radio-label {
     color: #000000;
     border: #3DD251 2px solid;
 }
 
 
-.yourLocation{
+.your-location{
     color: #000000;
     border: #3DD251 1px solid;  
     padding: 10px 20px;
@@ -577,7 +544,7 @@ input[type="radio"]:checked + .categoryRadioLabel {
 }
 
 
-#rightArrowBtn{
+#right-arrow-btn{
     background-color: #3DD251;
     border: 2px  #3DD251 solid;
     width: 45px;
@@ -591,101 +558,120 @@ input[type="radio"]:checked + .categoryRadioLabel {
 
 
 
-
-
 /* Who are you fundraising for */
-#causeToFundraiseSection{
-    margin-top: 32px;
+#cause-to-fundraise-section{
+    margin-top: 25px;
     padding-left: 8%;
+    display: flex;
+    gap: 105px;
 }
 
-#whoFundraise{
+#who-fundraise{
 display: flex;
 flex-direction: column;
-gap: 10px;
+gap: 30px;
 }
 
 
-#fundraiseFor{
+#fundraise-for{
 display: flex;
 gap: 55px;
 }
 
 
 
-#fundraiseForLabel{
-    margin-top: 10%;
+#fundraise-for-label{
+    margin-top: 5%;
 }
 
-.setAGoalBtn{
+.set-a-goal-btn{
     width: 300px;
     margin: 10px 10px 10px 0px;
 }
 
 
-.fundraiseForImgs{
+.fundraise-for-imgs{
     width: 60px;
     height: 60px;;
 }
 
-#fundraiseHeartAndHands{
+#fundraise-heart-and-hands{
     margin-top: 10%;
+    width: 80%;
 }
 
 
 
+#currency-select{
+background-color: #3DD251;
+border: #3DD251;
+height: 38px;
+color: white;
+padding: 4%;
+width: 70px;
+margin-top: 10px;
+border-top-left-radius:30px ;
+border-bottom-left-radius:30px ;
+}
+
 
 /* Build your fundraise profile */
-#buildYourFundraiseProfile{
+#build-your-fundraise-profile{
 margin-top: 30px;
 padding: 50px;
 margin-left: 5%;
 }
 
 
-#buildFundraiseHeading{
-margin-left: 40px;
+#build-fundraise-heading{
+margin-left: 0px;
 font-size: 30px;
 padding-bottom: 2%;
 }
 
-#imageAndDonate{
+#image-and-donate{
     display: flex;
     gap: 210px;
 top: 0%;
 }
 
-#imageAndBtn{
+#image-and-btn{
 display: flex;
 flex-direction: column;
-gap: 80px;
 }
 
 
-#submitReview{
-    width: 350px;
+#submit-review{
+    width: 300px;
+    margin-top: 34%;
 }
 
-
-#typeAStory{
+#type-a-story{
     border-radius: 40px;
     border: 1px #3DD251 solid;
     padding: 5%;
+    width: 430px;
+    text-align: left;
 }
 
-#donateToSupportInput{
+#donate-to-support-input{
     width: 430px;
 }
 
-#titleAndStory{
+#title-and-story{
 display: flex;
 flex-direction: column;
 gap: 20px;
 }
 
-.uploadContainer {
-    width: 400px;
-    height: 300px;
+
+.image-story{
+width: 30%;
+}
+
+.upload-container {
+    width: 300px;
+    height: 250px;
     border: 1px solid #3DD251;
     border-radius: 25px;
     display: flex;
@@ -699,18 +685,18 @@ gap: 20px;
     background-color: #f9f9f9;
   }
 
-  .uploadContainer.hover {
+  .upload-container.hover {
     background-color: #e0e0e0;
     border-color: #aaa;
   }
 
-  .uploadContainer img {
+  .upload-container img {
     max-width: 100%;
     max-height: 100%;
     display: none;
   }
 
-  .uploadInput {
+  .upload-input {
     position: absolute;
     top: 0;
     left: 0;
@@ -720,7 +706,101 @@ gap: 20px;
     cursor: pointer;
   }
 
-  .uploadText {
+  .upload-text {
     display: block;
     padding: 10px;
+  }
+
+
+
+
+  #empower-head-and-i{
+    padding: 5%;
+   }
+  /* Empower Container */
+  .empower-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 6%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .empower-text {
+    flex: 1;
+  }
+  .empower-image img {
+    max-width: 100%;
+    height: auto;
+    flex: 0 1 auto;
+  }
+
+  .transaction-fee-container {
+    margin-bottom: 30px; 
+  }
+
+ 
+  .transaction-fee-container h1 {
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+
+  .transaction-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 20px;
+  }
+
+  .transaction-content p {
+    flex: 1; 
+    max-width: 60%; 
+    margin: 0; 
+  }
+
+  .transaction-content img {
+    max-width: 100%; 
+    height: auto; 
+    flex: 0 1 auto;
+    max-height: 200px; 
+  }
+
+  .ugandan-based-paragraph{
+        text-align: left; 
+        max-width: 60%; 
+        margin-left: 10%;
+        line-height: 1.6; 
+        padding: 20px;    
+  }
+
+  #transaction-fee-container{
+    margin: 0 9%; 
+  }
+
+
+  #text-and-button{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+
+  #start-a-fundraiser-btn{
+    width: 40%;
+    margin-top: 5%;
+  }
+
+  #empower-heading{
+    color:  #01405F;
+  }
+
+
+  #why-we-paragraph{
+    text-align: left;
+    margin-left: 11%;
+  }
+
+  #transaction-fee-paragraph{
+    max-width: 40%;
   }

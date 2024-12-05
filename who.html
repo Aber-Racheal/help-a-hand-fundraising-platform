@@ -41,103 +41,134 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <style>
+      /* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling for balanced margin and padding */
+body {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px; /* Adjust as needed */
+  padding-right: 20px; /* Adjust as needed */
+  max-width: 1200px; /* Optional: Set a max width to prevent overflow */
+}
+
+    </style>
   </head>
   <body>
-    <section class="causeToFundraiseSection" id="causeToFundraiseSection">
+    <section class="cause-to-fundraise-section" id="cause-to-fundraise-section">
       <div>
         <img
           src="assets\img\fundraiseHeartAndHands.png"
           alt="fundraise"
-          id="fundraiseHeartAndHands"
+          id="fundraise-heart-and-hands"
         />
       </div>
 
-      <div id="fundraiseDiv">
-        <h1 class="fundraiseHeadings">Who are you fundraising for</h1>
+      <div id="fundraise-div">
+        <h1 class="fundraise-headings">Who are you fundraising for</h1>
 
-        <div id="whoFundraise">
-          <div id="fundraiseFor">
+        <div id="who-fundraise">
+          <div id="fundraise-for">
             <img
               src="assets\img\yourself.png"
               alt="Yourself"
-              class="fundraiseForImgs"
+              class="fundraise-for-imgs"
             />
-            <p id="fundraiseForLabel">Yourself</p>
+            <p id="fundraisefor-label">Yourself</p>
           </div>
-          <div id="fundraiseFor">
+          <div id="fundraise-for">
             <img
               src="assets\img\charityAndCommImg.png"
               alt="Charity and Community"
-              class="fundraiseForImgs"
+              class="fundraise-for-imgs"
             />
-            <p id="fundraiseForLabel">Charity and Community</p>
+            <p id="fundraise-for-label">Charity and Community</p>
           </div>
-          <div id="fundraiseFor">
+          <div id="fundraise-for">
             <img
               src="assets\img\friendsFamilyImg.png"
               alt="Family or Friends"
-              class="fundraiseForImgs"
+              class="fundraise-for-imgs"
             />
-            <p id="fundraiseForLabel">Family or Friends</p>
+            <p id="fundraise-for-label">Family or Friends</p>
           </div>
         </div>
 
         <div>
-          <h1 class="fundraiseHeadings">What is your starting goal</h1>
+          <h1 class="fundraise-headings">What is your starting goal</h1>
 
           <div>
-            <input
-              type="text"
-              placeholder="$    Set a goal"
-              class="yourLocation setAGoalBtn"
-              id="setAGoalBtn"
-            />
+            <div class="input-group mb-3">
+              <!-- Currency Dropdown -->
+              <div class="input-group-prepend">
+                <select class="form-select" id="currency-select" aria-label="Currency">
+                  <option value="UGX">UGX</option>
+                  <option value="USD" selected>USD</option>
+                </select>
+              </div>
+              <!-- Amount Input -->
+              <input
+                type="number"
+                placeholder="Set a goal"
+                class="form-control set-a-goal-btn your-location"
+                id="set-a-goal-btn"
+                aria-label="Amount"
+              />
+            </div>
+            
             <p>You can change your goal later on</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="buildYourFundraiseProfile">
-      <h1 class="fundraiseHeadings" id="buildFundraiseHeading">
+    <section id="build-your-fundraise-profile">
+      <h1 class="fundraise-headings" id="build-fundraise-heading">
         Build your fundraise profile
       </h1>
 
-      <div id="imageAndDonate">
-        <div id="imageAndBtn">
-          <div class="uploadContainer" id="uploadArea">
-            <span class="uploadText">Drop or upload your photo here</span>
-            <img id="previewImage" src="" alt="Image Preview" />
+      <div id="image-and-donate">
+        <div id="image-and-btn">
+          <div class="upload-container" id="upload-area">
+            <span class="upload-text">Drop or upload your photo here</span>
+            <img id="preview-image" src="" alt="Image Preview"/>
             <input
               type="file"
-              id="imageUpload"
-              class="uploadInput"
+              id="image-upload"
+              class="upload-input"
               accept="image/*"
             />
           </div>
-          <button id="submitReview" class="startAGiveaHandBtn">
+          <button id="submit-review" class="start-a-give-a-hand-btn">
             Submit for review
           </button>
         </div>
 
-        <div id="titleAndStory">
+        <div id="title-and-story">
           <div>
-            <h2 class="fundraiseHeadings">Your fundraiser title</h2>
+            <h2 class="fundraise-headings">Your fundraiser title</h2>
             <input
               type="text"
               placeholder="Donate to support ......."
-              class="yourLocation setAGoalBtn"
-              id="donateToSupportInput"
+              class="your-location set-a-goal-btn"
+              id="donate-to-support-input"
             />
           </div>
 
           <div>
-            <h2 class="fundraiseHeadings">Tell us your story</h2>
+            <h2 class="fundraise-headings">Tell us your story</h2>
             <textarea
               rows="10"
               cols="50"
               placeholder="Type..."
-              id="typeAStory"
+              id="type-a-story"
+              class="upload-container"
             ></textarea>
           </div>
         </div>
@@ -145,10 +176,10 @@
     </section>
 
     <script>
-      const uploadArea = document.getElementById("uploadArea");
-      const fileInput = document.getElementById("imageUpload");
-      const previewImage = document.getElementById("previewImage");
-      const uploadText = document.querySelector(".uploadText");
+      const uploadArea = document.getElementById("upload-area");
+      const fileInput = document.getElementById("image-upload");
+      const previewImage = document.getElementById("preview-image");
+      const uploadText = document.querySelector(".upload-iext");
 
       uploadArea.addEventListener("click", () => fileInput.click());
 

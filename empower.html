@@ -42,117 +42,36 @@
       rel="stylesheet"
     />
     <style>
-       #empowerHeadAndI{
-        padding: 5%;
-       }
-      /* Empower Container */
-      .empower-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 6%;
-        flex-wrap: wrap;
-        gap: 20px;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
 
-      /* Empower Text */
-      .empower-text {
-        flex: 1;
-      }
-
-      /* Empower Image */
-      .empower-image img {
-        max-width: 100%;
-        height: auto;
-        flex: 0 1 auto;
-      }
-
-      /* Transaction Fee Container */
-      .transaction-fee-container {
-        margin-bottom: 30px; /* Adds space below the section */
-      }
-
-      /* Styling for the Heading */
-      .transaction-fee-container h1 {
-        text-align: center; /* Centers the title */
-        margin-bottom: 20px; /* Adds space below the title */
-      }
-
-      /* Flexbox Layout for the Paragraph and Image */
-      .transaction-content {
-        display: flex;
-        justify-content: space-between; /* Spreads the paragraph and image apart */
-        align-items: center; /* Vertically centers the content */
-        gap: 20px; /* Adds space between paragraph and image */
-      }
-
-      /* Paragraph Styling */
-      .transaction-content p {
-        flex: 1; /* Allows the paragraph to take up available space */
-        max-width: 60%; /* Optional: Limits the width of the paragraph */
-        margin: 0; /* Removes any default margin around the paragraph */
-      }
-
-      /* Image Styling */
-      .transaction-content img {
-        max-width: 100%; /* Makes sure the image is responsive */
-        height: auto; /* Keeps the image's aspect ratio intact */
-        flex: 0 1 auto; /* Prevents the image from growing but allows it to shrink */
-        max-height: 200px; /* Optional: limits the height of the image */
-      }
-
-      .ugandanBasedParagraph{
-            text-align: left; 
-            max-width: 60%; 
-            margin-left: 10%;
-            line-height: 1.6; 
-            padding: 20px;    
-      }
-
-      #transactionFeeContainer{
-        margin: 0 9%; /* Consistent left and right margins */
-      }
-
-
-      #text-and-button{
-        display: flex;
-        flex-direction: column;
-        gap: 100px;
-      }
-
-
-      #start-a-fundraiser-btn{
-        width: 40%;
-      }
-
-      #empower-heading{
-        color:  #01405F;
-      }
-
-
-      #why-we-paragraph{
-        text-align: left;
-        margin-left: 11%;
-      }
-
-      #transaction-fee-paragraph{
-        max-width: 40%;
+      body {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 1200px;
       }
     </style>
   </head>
   <body>
     <section id="empower">
-      <div id="empowerHeadAndI" class="empower-container">
+      <div id="empower-head-and-i" class="empower-container">
         <div class="empower-text" id="text-and-button">
           <h1 id="empower-heading">Empower Change, One Donation at a Time.</h1>
-          <button class="startAGiveaHandBtn" id="start-a-fundraiser-btn">Start a Fundraiser</button>
+          <button class="start-a-give-a-hand-btn" id="start-a-fundraiser-btn">
+            Start a Fundraiser
+          </button>
         </div>
         <div class="empower-image">
           <img src="assets/img/empower.png" alt="empower" />
         </div>
       </div>
 
-      <p class="ugandanBasedParagraph">
+      <p class="ugandan-based-paragraph">
         We are a Uganda-based charity organization dedicated to helping
         individuals and communities achieve their dreams through free
         fundraising support. Powered by Kakebe Technologies, we provide a
@@ -160,20 +79,20 @@
         campaigns without any cost.
       </p>
 
-      <section id="transactionsDonarsEasySection">
-        <div id="transactionsDonarsEasy">
+      <section id="transactions-donars-easy-section">
+        <div id="transactions-donars-easy">
           <div>
-            <button class="numberBtn">1</button>
+            <button class="number-btn">1</button>
           </div>
-          <div class="pictureAndParagraph">
+          <div class="picture-and-paragraph">
             <img src="assets\img\secure.png" alt="Secure Transactions" />
             <p class="paragrapghs">Secure Transactions</p>
           </div>
         </div>
 
-        <div id="transactionsDonarsEasy">
+        <div id="transactions-donars-easy">
           <div>
-            <button class="numberBtn">2</button>
+            <button class="number-btn">2</button>
           </div>
           <div>
             <img
@@ -184,16 +103,16 @@
           </div>
         </div>
 
-        <div id="transactionsDonarsEasy">
+        <div id="transactions-donars-easy">
           <div>
-            <button class="numberBtn">3</button>
+            <button class="number-btn">3</button>
           </div>
           <div>
-            <div id="easyToYouImgdiv">
+            <div id="easy-to-you-img-div">
               <img
                 src="assets\img\easy.png"
                 alt="Easy To Share"
-                id="easyToYouImg"
+                id="easy-to-you-img"
               />
             </div>
             <p class="paragrapghs">Easy To You</p>
@@ -201,11 +120,16 @@
         </div>
       </section>
 
-      <div class="transaction-fee-container" >
-        <h1 class="fundraiseHeadings" id="why-we-paragraph">Why we have transaction fee</h1>
+      <div class="transaction-fee-container">
+        <h1 class="fundraise-headings" id="why-we-paragraph">
+          Why we have transaction fee
+        </h1>
 
-        <div class="transaction-content empower-container" id="transactionFeeContainer">
-          <p class="ugandanBasedParagraph" id="transaction-fee-paragraph">
+        <div
+          class="transaction-content empower-container"
+          id="transaction-fee-container"
+        >
+          <p class="ugandan-based-paragraph" id="transaction-fee-paragraph">
             Transaction fees help cover the costs of processing donations,
             including bank charges, payment systems, to ensure secure and
             efficient handling of your contributions.

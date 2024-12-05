@@ -36,37 +36,73 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <!-- responsive -->
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- Bootstrap icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
   </head>
+
+  <style>
+    /* Global Reset for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply the same margin and padding styles to all sections */
+section {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px; /* Adjust as needed */
+  padding-right: 20px; /* Adjust as needed */
+  max-width: 1200px; /* Optional: Set a max width for sections */
+}
+
+
+  </style>
   <body>
     <!-- Navigation Menu -->
     <nav class="navbar">
       <a href="">
         <img
-          id="logoInGreenCircle"
+          id="logo-in-green-circle"
           src="assets\img\logo.png"
           alt="Organization Logo"
         />
       </a>
-      <div class="navItems">
-        <ul>
+      <div class="nav-items">
+        <ul style="list-style: none; padding: 0; margin: 0">
           <li><a href="">Home</a></li>
           <li><a href="">Fundraiser</a></li>
           <li>
-            <a href="" id="helpahelper"
+            <a href="" id="help-a-helper"
               ><img
-                id="logoInNavHelper"
+                id="logo-in-nav-helper"
                 src="assets\img\giveahandLogo.png"
                 alt="logo"
               />HelpaHelper</a
             >
           </li>
+          <li><i class="bi bi-search" id="search-icon"></i></li>
+
+          <div>
+            <input
+              type="text"
+              id="search-bar"
+              class="form-control search-bar-style"
+              placeholder="Search..."
+            />
+          </div>
+
           <li><a href="">Donate</a></li>
           <li><a href="">About</a></li>
         </ul>
       </div>
       <a href="">
         <img
-          id="logoInGreenCircle1"
+          id="logo-in-green-circle"
           src="assets\img\profile.png"
           alt="Organization Logo"
         />
@@ -75,66 +111,67 @@
 
     <!--  Empower Change Section  -->
 
-    <section id="empowerSection">
+    <section id="empower-section">
       <div class="container">
-        <div class="empowerChange">
+        <div class="empower-change">
           Empower Change, One Donation at a Time.
-          <div id="searchBarAndBtn">
-            <input type="text" placeholder="Search" id="searchBar" />
-            <button class="startAGiveaHandBtn">Start a GiveaHand</button>
+          <div id="start-a-give-a-hand-btn">
+            <button class="start-a-give-a-hand-btn">Start a GiveaHand</button>
           </div>
 
-          <div id="fundraisingIdeas">
+          <div id="fundraising-ideas">
             <div
-              id="childSupportAndFundraisingContainer"
-              class="fundraisingIdeasContainer"
+              id="child-support-and-fundraising-container"
+              class="fundraising-ideas-container"
             >
-              <div id="childSupport" class="fundraisingIdeasDivs">
+              <div id="child-support" class="fundraising-ideas-divs">
                 Child Support
               </div>
-              <div id="tuitionFundraising" class="fundraisingIdeasDivs">
+              <div id="tuition-fundraising" class="fundraising-ideas-divs">
                 Tuition Fundraising
               </div>
             </div>
 
             <div
-              id="medicalSupportAndChurchContainer"
-              class="fundraisingIdeasContainer"
+              id="medical-support-and-church-container"
+              class="fundraising-ideas-container"
             >
-              <div class="medicalSupportAndChurch">
-                <div id="medicalSupport" class="fundraisingIdeasDivs">
+              <div class="medical-support-and-church">
+                <div id="medical-support" class="fundraising-ideas-divs">
                   Medical Support
                 </div>
                 <img
                   src="assets\img\medicalSupport.png"
                   alt="Medical support"
-                  class="medicalChurchImg"
+                  class="medical-church-img"
                 />
               </div>
-              <div class="medicalSupportAndChurch">
+              <div class="medical-support-and-church">
                 <img
                   src="assets\img\church.png"
                   alt="Church"
-                  class="medicalChurchImg"
+                  class="medical-church-img"
                 />
-                <div id="church" class="fundraisingIdeasDivs">Church</div>
+                <div id="church" class="fundraising-ideas-divs">Church</div>
               </div>
             </div>
 
             <div
-              id="birthdaysAndEmergencyContainer"
-              class="fundraisingIdeasContainer"
+              id="birthdays-and-emergency-container"
+              class="fundraising-ideas-container"
             >
-              <div id="birthdays" class="fundraisingIdeasDivs">Birthdays</div>
-              <div id="emergency" class="fundraisingIdeasDivs">Emergency</div>
+              <div id="birthdays" class="fundraising-ideas-divs">Birthdays</div>
+              <div id="emergency" class="fundraising-ideas-divs">Emergency</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Fundraise for kasasi -->
+
     <section>
-      <div class="fundRaise">
+      <div class="fund-raise">
         <div class="kasasira">
           <img id="kasasira" src="assets\img\kasasira.png" alt="Kasasira" />
           <p>Save Kasasira From Cancer Funderiaser</p>
@@ -143,52 +180,56 @@
             <div class="progress-bar" id="progress-bar"></div>
             <span class="goal-label" id="goal-label"></span>
             <div id="progress-info">$0 / $0</div>
-        </div>
+          </div>
         </div>
 
-        <div class="schoolAndRocketProject">
+        <div class="school-and-rocket-project">
           <div class="school">
             <img
               src="assets\img\Children studying at Mantapala refugee settlement, in northern Zambia  1.png"
               alt="Keep Children in School"
-              id="otimAndOcenInSchool"
+              class="school-and-rocket-project"
             />
             <p>Keep Otim and Ocen in school</p>
             <div class="progress-container">
               <div class="progress-bar" id="progress-bar1"></div>
               <span class="goal-label" id="goal-label"></span>
               <div id="progress-info1">$0 / $0</div>
-          </div>
+            </div>
           </div>
 
-          <div class="rocketProject">
-            <img src="assets\img\rocket.png" alt="Onen's Rocket Project" id="rocketProject"/>
+          <div class="rocket-project">
+            <img
+              src="assets\img\rocket.png"
+              alt="Onen's Rocket Project"
+              class="school-and-rocket-project"
+            />
             <p>Fund Onen’s Rocket Project</p>
 
             <div class="progress-container">
               <div class="progress-bar" id="progress-bar2"></div>
               <span class="goal-label" id="goal-label"></span>
               <div id="progress-info2">$0 / $0</div>
-          </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="transactionsDonarsEasySection">
-      <div id="transactionsDonarsEasy">
+    <section id="transactions-donars-easy-section">
+      <div id="transactions-donars-easy">
         <div>
-          <button class="numberBtn">1</button>
+          <button class="number-btn">1</button>
         </div>
-        <div class="pictureAndParagraph">
+        <div class="picture-and-paragraph">
           <img src="assets\img\secure.png" alt="Secure Transactions" />
           <p class="paragrapghs">Secure Transactions</p>
         </div>
       </div>
 
-      <div id="transactionsDonarsEasy">
+      <div id="transactions-donars-easy">
         <div>
-          <button class="numberBtn">2</button>
+          <button class="number-btn">2</button>
         </div>
         <div>
           <img
@@ -199,16 +240,16 @@
         </div>
       </div>
 
-      <div id="transactionsDonarsEasy">
+      <div id="transactions-donars-easy">
         <div>
-          <button class="numberBtn">3</button>
+          <button class="number-btn">3</button>
         </div>
         <div>
-          <div id="easyToYouImgdiv">
+          <div id="easy-to-you-img-div">
             <img
               src="assets\img\easy.png"
               alt="Easy To Share"
-              id="easyToYouImg"
+              id="easy-to-you-img"
             />
           </div>
           <p class="paragrapghs">Easy To You</p>
@@ -216,83 +257,85 @@
       </div>
     </section>
 
-    <section id="urgentCause">
+    <div id="urgent-cause">
       <div>
-        <h1>Urgent Cause</h1>
-        <img id="kasasira" src="assets\img\kasasira.png" alt="" />
+        <h1 class="urgent-cause-heading">Urgent Cause</h1>
+        <img
+          id="kasasira"
+          src="assets\img\kasasira.png"
+          alt="kasasira's picture"
+        />
       </div>
 
       <div>
-        <h2>Save Kasasira From Cancer Fundraiser</h2>
-        <p id="saveKasasiraParagraph">
+        <h2 class="urgent-cause-heading">
+          Save Kasasira From Cancer Fundraiser
+        </h2>
+        <p id="save-kasasira-paragraph">
           Kasasira is fighting a tough battle against cancer, and we need your
           help to save their life. The cost of treatment is overwhelming, and
           every contribution brings them closer to healing.
         </p>
-        <div class="progress-container">
+        <div class="progress-container" id="progress-container">
           <div class="progress-bar" id="progress-bar3"></div>
           <span class="goal-label" id="goal-label"></span>
           <div id="progress-info3">$0 / $0</div>
+        </div>
       </div>
-      </div>
-    </section>
+    </div>
 
-    <section id="startCampaignSection">
-      <h1 id="startCampaignHeading">Start a Campaign for anyone</h1>
+    <section id="start-campaign-section">
+      <h1 id="start-campaign-heading">Start a Campaign for anyone</h1>
 
-      <div id="campaignCategories">
+      <div id="campaign-categories">
         <div>
-          <h2 class="campaignCategoriesHeading">Yourself</h2>
+          <h2 class="campaign-categories-heading">Yourself</h2>
           <img
             src="assets\img\yourself.png.png"
             alt="Yourself"
-            class="campaignImages"
+            class="campaign-images"
           />
         </div>
         <div>
-          <h2 class="campaignCategoriesHeading">Friends and Family</h2>
+          <h2 class="campaign-categories-heading">Friends and Family</h2>
           <img
             src="assets\img\friendsAndFamily.png"
             alt="Friends and Family"
-            class="campaignImages"
+            class="campaign-images"
           />
         </div>
         <div>
-          <h2 class="campaignCategoriesHeading">Community</h2>
+          <h2 class="campaign-categories-heading">Community</h2>
           <img
             src="assets\img\community.png"
             alt="Community"
-            class="campaignImages"
+            class="campaign-images"
           />
         </div>
       </div>
 
-      <div id="greenLines">
-        <div class="greenLine"></div>
-        <div class="greenLine"></div>
-        <div class="greenLine"></div>
+      <div id="green-lines">
+        <div class="green-line"></div>
+        <div class="green-line"></div>
+        <div class="green-line"></div>
       </div>
 
-      <div id="campaignParagraphs">
-        <p class="campaignParagraph">
+      <div id="campaign-paragraphs">
+        <p class="campaign-paragraph">
           Transactions and done directly and safely to your bank account for
           your own use
         </p>
 
-        <p class="campaignParagraph">
-          Transactions and done directly and safely to your bank account for
-          your own use
+        <p class="campaign-paragraph">
+          You will help the beneficiary start and run a campaign and invite them
+          to recieve funds or distribute it yourself
         </p>
 
-        <p class="campaignParagraph">
-          Transactions and done directly and safely to your bank account for
-          your own use
+        <p class="campaign-paragraph">
+          Fundraise to solve a problem in your community
         </p>
       </div>
     </section>
-
-
-
 
     <script>
       // Dummy data
@@ -300,38 +343,115 @@
       let progress = 5000; // Replace with PHP value later
 
       // Initialize progress bar
-      document.getElementById("progress-info").innerText = `$${progress.toLocaleString()} / $${goal.toLocaleString()}`;
+      document.getElementById(
+        "progress-info"
+      ).innerText = `$${progress.toLocaleString()} / $${goal.toLocaleString()}`;
       //document.getElementById("goal-label").innerText = `$${goal.toLocaleString()}`;
-      document.getElementById("progress-bar").style.width = (progress / goal) * 100 + "%";
-      document.getElementById("progress-info1").innerText = `$${progress.toLocaleString()} / $${goal.toLocaleString()}`;
+      document.getElementById("progress-bar").style.width =
+        (progress / goal) * 100 + "%";
+      document.getElementById(
+        "progress-info1"
+      ).innerText = `$${progress.toLocaleString()} / $${goal.toLocaleString()}`;
       //document.getElementById("goal-label").innerText = `$${goal.toLocaleString()}`;
-      document.getElementById("progress-bar1").style.width = (progress / goal) * 100 + "%";
-      document.getElementById("progress-info2").innerText = `$${progress.toLocaleString()} / $${goal.toLocaleString()}`;
+      document.getElementById("progress-bar1").style.width =
+        (progress / goal) * 100 + "%";
+      document.getElementById(
+        "progress-info2"
+      ).innerText = `$${progress.toLocaleString()} / $${goal.toLocaleString()}`;
       //document.getElementById("goal-label").innerText = `$${goal.toLocaleString()}`;
-      document.getElementById("progress-bar2").style.width = (progress / goal) * 100 + "%";
-      document.getElementById("progress-info3").innerText = ` $${progress.toLocaleString()} / $${goal.toLocaleString()}`;
+      document.getElementById("progress-bar2").style.width =
+        (progress / goal) * 100 + "%";
+      document.getElementById(
+        "progress-info3"
+      ).innerText = ` $${progress.toLocaleString()} / $${goal.toLocaleString()}`;
       //document.getElementById("goal-label").innerText = `$${goal.toLocaleString()}`;
-      document.getElementById("progress-bar3").style.width = (progress / goal) * 100 + "%";
+      document.getElementById("progress-bar3").style.width =
+        (progress / goal) * 100 + "%";
 
       // Update progress
       function updateProgress() {
-          const input = document.getElementById("user-contribution").value;
-          const contribution = parseFloat(input);
+        const input = document.getElementById("user-contribution").value;
+        const contribution = parseFloat(input);
 
-          if (!isNaN(contribution) && contribution > 0) {
-              progress += contribution;
-              if (progress > goal) progress = goal;
+        if (!isNaN(contribution) && contribution > 0) {
+          progress += contribution;
+          if (progress > goal) progress = goal;
 
-              const progressPercentage = (progress / goal) * 100;
-              document.getElementById("progress-bar").style.width = progressPercentage + "%";
-              document.getElementById("progress-info").innerText = `Progress: $${progress.toLocaleString()} / $${goal.toLocaleString()}`;
-          } else {
-              alert("Please enter a valid contribution amount.");
-          }
+          const progressPercentage = (progress / goal) * 100;
+          document.getElementById("progress-bar").style.width =
+            progressPercentage + "%";
+          document.getElementById(
+            "progress-info"
+          ).innerText = `Progress: $${progress.toLocaleString()} / $${goal.toLocaleString()}`;
+        } else {
+          alert("Please enter a valid contribution amount.");
+        }
 
-          // Clear input field
-          document.getElementById("user-contribution").value = "";
+        // Clear input field
+        document.getElementById("user-contribution").value = "";
       }
-  </script>
+
+      // Add a click event listener to the search icon
+      document
+        .getElementById("search-icon")
+        .addEventListener("click", function () {
+          let searchBar = document.getElementById("search-bar");
+
+          // If the search bar doesn't exist, create it dynamically
+          if (!searchBar) {
+            // Create the search bar element
+            searchBar = document.createElement("input");
+            searchBar.type = "text";
+            searchBar.id = "search-bar";
+            searchBar.classList.add("form-control", "search-bar-style"); // Bootstrap form-control for styling
+            searchBar.placeholder = "Search...";
+
+            // Append the search bar after the icon
+            this.parentElement.appendChild(searchBar);
+
+            // Focus on the search bar after it's created
+            searchBar.focus();
+
+            //Add a smooth transition for the search bar appearance
+            setTimeout(() => {
+              searchBar.style.opacity = 1;
+            }, 50);
+          } else {
+            // If the search bar already exists, toggle its visibility with a smooth transition
+            if (
+              searchBar.style.display === "none" ||
+              searchBar.style.display === ""
+            ) {
+              searchBar.style.display = "block"; // Show the search bar
+              searchBar.focus(); // Focus on the search bar
+              setTimeout(() => {
+                searchBar.style.opacity = 1;
+              }, 50);
+            } else {
+              searchBar.style.opacity = 0; // Fade out the search bar
+              setTimeout(() => {
+                searchBar.style.display = "none"; // Hide the search bar after fade
+              }, 300); // Delay the hiding to allow the fade effect
+            }
+          }
+        });
+
+      // Close the search bar if clicked outside of it
+      document.addEventListener("click", function (event) {
+        const searchBar = document.getElementById("search-bar");
+        const searchIcon = document.getElementById("search-icon");
+
+        if (
+          searchBar &&
+          !searchBar.contains(event.target) &&
+          !searchIcon.contains(event.target)
+        ) {
+          searchBar.style.opacity = 0;
+          setTimeout(() => {
+            searchBar.style.display = "none";
+          }, 300);
+        }
+      });
+    </script>
   </body>
 </html>
