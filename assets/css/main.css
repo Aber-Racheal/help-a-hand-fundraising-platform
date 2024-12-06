@@ -91,16 +91,31 @@ margin-left: 20px
 }
   
 .container {
-    
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    height: 100vh;           
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden; /* Prevents the image from overflowing the container */
 }
 
+.background-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 500px;
+  width: 500px; /* Adjust this value for the size of the square */
+  height: 500px; /* Ensure it stays square */
+  object-fit: cover; /* Ensures the image covers the square container */
+  filter: blur(10px); /* Blurs the image */
+  opacity: 0.3; /* Makes the image transparent */
+  z-index: -1; /* Places the image behind the content */
+  transform: translate(-50%, -50%); /* Centers the image */
+}
+
+
 .empower-change{
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 width: 300px;
 height: 300px;
 border-radius: 600px;
@@ -535,6 +550,20 @@ display: flex;
     gap: 150px;
     padding: 8px 50px 0px 50px;
 }
+.image-container {
+  position: relative; /* This ensures the overlay is positioned relative to the container */
+  display: inline-block; /* Makes the container size fit the image */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background-color: rgba(0, 128, 0, 0.3); /* Transparent green color */
+  z-index: 1; /* Places the overlay above the image */
+}
 
 #fundraise-div{
     display: flex;
@@ -552,11 +581,12 @@ display: flex;
 .fundraise-headings{
 color:#01405F;
 font-size: 20px;
+margin-bottom: 10px;
 }
 
 
 #help-a-hand-logo{
-    width: 10%;
+    width: 5%;
     margin-left: 35%;
 }
 
