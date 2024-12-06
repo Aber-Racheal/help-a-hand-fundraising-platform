@@ -75,12 +75,11 @@ margin-left: 20px
 
 
 #logo-in-nav-helper{
-    width: 15%; 
-    margin: 3%;
+    width: 25%; 
 }
 
 
-  /*End of  Navigation Section */
+/*End of  Navigation Section */
 
 
 
@@ -198,7 +197,7 @@ justify-content: center;
 }
 
 .fundraising-ideas-divs{
-    border: #3DD251 2px solid;
+    border: #3DD251 1px solid;
     width: auto;
     height: auto;
     font-size: 15px;
@@ -206,6 +205,14 @@ justify-content: center;
     text-wrap: nowrap;
     padding:10px;
 }
+
+
+.fundraise-items-on-focus{
+    outline: none;
+    border-color: #3DD251;
+    box-shadow: 0 0 5px rgba(61, 210, 81, 0.5); 
+}
+
 
 #child-support-and-fundraising-container{
     gap: 223px;
@@ -221,20 +228,18 @@ gap: 30px;
 }
 
 #medical-support{
-    border: #3DD251 2px solid;
+    border: #3DD251 1px solid;
     width: auto;
-    height: 40px;
     font-size: 15x;
-    border-radius: 25px;
+    border-radius:80px;
     text-wrap: nowrap;
-    padding:10px;
+    padding:15px;
     margin-right: 10px;
 }
 
 #church{
-    border: #3DD251 2px solid;
+    border: #3DD251 1px solid;
     width: auto;
-    height: 40px;
     font-size: 15x;
     border-radius: 25px;
     text-wrap: nowrap;
@@ -251,7 +256,7 @@ gap: 30px;
 
 }
 #emergency {
-   margin-right: 10px;
+  padding: 10%;
   }
 
 #medical-support-and-church-container{
@@ -265,7 +270,7 @@ align-items: center;
     gap: 300px; 
 }
 
-/* End od empower section */
+/* End of empower section */
 
 
 
@@ -273,28 +278,30 @@ align-items: center;
 .fund-raise{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 200px;
-    padding: 0%;
-    top: 0%;
+    justify-items: center;
+    padding: 0% 0 0 5%;
+}
+
+#featured-campaigns{
+    padding: 0% 0 2% 5%;
+    font-size: 35px;
 }
 
 .progress-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 300px;
+    width: 230px;
     border-radius: 10px;
-   margin-bottom: 10px;
+    margin-bottom: 10px;
+    margin-left: -3%;
     overflow: hidden;
     position: relative;
     height: 20px; /* Adjusted height for better appearance */
- 
 }
 
 .progress-bar {
-    height: 8px;
+    height: 4px;
     width: 0%;
     background: linear-gradient(90deg, #4caf50, #8bc34a);
     transition: width 0.3s;
@@ -305,7 +312,7 @@ align-items: center;
     position: absolute;
     right: 10px;
     top: 5px;
-    font-size: 14px;
+    font-size: 10px;
     color: #555;
 }
 
@@ -317,39 +324,40 @@ align-items: center;
 }
 
 
-#kasasira {
-width: 350px;
-height: 350pxpx;
-border-radius: 40px;
+.progress-info{
+    font-size: 10px;  
 }
 
+#small-projects-container{
+display: flex;
+flex-direction: column;
+gap: 43px;
+}
+
+#kasasira {
+width: 75%;
+border-radius: 5px;
+}
+
+
+#kasasira-progress-container{
+    margin-left: -0.1%;
+}
 .school-and-rocket-project{
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 5%;
-    margin-top: 4%;
-}
-
-
-.school-and-rocket-project{
-width: 250px;
-height: 250pxpx;
+    flex-direction: row;
+    gap: 50px;
+    width: 250px;
+    margin-left: -5%;
 }
 
 .fund-raise p{
 text-wrap: nowrap;
-font-size: 18px;
-font-weight: 500;
+font-size: 14px;
+font-weight: 400;
 margin-top: 5%;
 text-align: left;
 }
-
-
-
-
-
-
 
 
 
@@ -392,27 +400,17 @@ height: 40px;
     flex-direction: column;
 }
 
+.transactions-donars-easy{
+    width: 70%;
+}
 
 .paragrapghs{
-    margin-top: 5%;
-    font-weight: 500;
+margin-top: 5%;
+font-weight: 500;
 text-align: center;
+margin-left: -30%;
+padding: 0%;
 }
-
-#easy-to-you-img-div{
-border: 1.5px solid #3DD251;
-width: 220px;
-border-radius: 50px;
-height: 130px;
-}
-
-
-#easy-to-you-img{
-    border-radius: 50px;
-}
-
-
-
 
 /* Urgent Cause */
 #urgent-cause{
@@ -424,21 +422,39 @@ height: 130px;
     
 }
 
-
+#kasasira-urgent-cause{
+    padding: 0% 0% 0% -0.%;
+    width: 390px;
+    margin-left: -4%;
+}
 .urgent-cause-heading{
     font-size: 25px;
     padding-bottom: 5%;
+    margin-left: -4%;
 }
 
 #save-kasasira-paragraph{
     margin-top: 10%;
+    margin-left: -4%;
 }
 
 
 #progress-container{
     margin-top: 20%;
+    width: 100%;
 }
 
+
+#progress-info3{
+font-size: 15px;
+}
+
+
+
+#progress-bar3{
+height: 8px;
+width: 50%;
+}
 /* Start a campaign section */
 
 #start-campaign-section{

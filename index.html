@@ -44,23 +44,11 @@
   </head>
 
   <style>
-    /* Global Reset for all elements */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-section {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px; 
-  padding-right: 20px;
-  max-width: 1200px; 
-}
-
-
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
   </style>
   <body>
     <!-- Navigation Menu -->
@@ -87,7 +75,6 @@ section {
           </li>
           <li><i class="bi bi-search" id="search-icon"></i></li>
 
-
           <li><a href="">Donate</a></li>
           <li><a href="">About</a></li>
         </ul>
@@ -100,7 +87,6 @@ section {
         />
       </a>
     </nav>
-
 
     <div>
       <input
@@ -125,10 +111,16 @@ section {
               id="child-support-and-fundraising-container"
               class="fundraising-ideas-container"
             >
-              <div id="child-support" class="fundraising-ideas-divs">
+              <div
+                id="child-support"
+                class="fundraising-ideas-divs fundraise-items-on-focus"
+              >
                 Child Support
               </div>
-              <div id="tuition-fundraising" class="fundraising-ideas-divs">
+              <div
+                id="tuition-fundraising"
+                class="fundraising-ideas-divs fundraise-items-on-focus"
+              >
                 Tuition Fundraising
               </div>
             </div>
@@ -138,7 +130,10 @@ section {
               class="fundraising-ideas-container"
             >
               <div class="medical-support-and-church">
-                <div id="medical-support" class="fundraising-ideas-divs">
+                <div
+                  id="medical-support"
+                  class="fundraising-ideas-divs fundraise-items-on-focus"
+                >
                   Medical Support
                 </div>
                 <img
@@ -153,8 +148,12 @@ section {
                   alt="Church"
                   class="medical-church-img"
                 />
-                <div id="emergency" class="fundraising-ideas-divs">Emergency</div>
-                
+                <div
+                  id="emergency"
+                  class="fundraising-ideas-divs fundraise-items-on-focus"
+                >
+                  Emergency
+                </div>
               </div>
             </div>
 
@@ -162,8 +161,18 @@ section {
               id="birthdays-and-emergency-container"
               class="fundraising-ideas-container"
             >
-              <div id="birthdays" class="fundraising-ideas-divs">Birthdays</div>
-              <div id="church" class="fundraising-ideas-divs">Church</div>
+              <div
+                id="birthdays"
+                class="fundraising-ideas-divs fundraise-items-on-focus"
+              >
+                Birthdays
+              </div>
+              <div
+                id="church"
+                class="fundraising-ideas-divs fundraise-items-on-focus"
+              >
+                Church
+              </div>
             </div>
           </div>
         </div>
@@ -173,45 +182,78 @@ section {
     <!-- Fundraise for kasasi -->
 
     <section>
+      <h1 id="featured-campaigns">Featured Campaigns</h1>
       <div class="fund-raise">
         <div class="kasasira">
           <img id="kasasira" src="assets\img\kasasira.png" alt="Kasasira" />
           <p>Save Kasasira From Cancer Funderiaser</p>
 
-          <div class="progress-container">
+          <div class="progress-container" id="kasasira-progress-container">
             <div class="progress-bar" id="progress-bar"></div>
             <span class="goal-label" id="goal-label"></span>
-            <div id="progress-info">$0 / $0</div>
+            <div id="progress-info" class="progress-info">$0 / $0</div>
           </div>
         </div>
+        <div id="small-projects-container">
+          <div class="school-and-rocket-project">
+            <div class="school">
+              <img
+                src="assets\img\Children studying at Mantapala refugee settlement, in northern Zambia  1.png"
+                alt="Keep Children in School"
+                class="school-and-rocket-project"
+              />
+              <p>Keep Otim and Ocen in school</p>
+              <div class="progress-container">
+                <div class="progress-bar" id="progress-bar1"></div>
+                <span class="goal-label" id="goal-label"></span>
+                <div id="progress-info1" class="progress-info">$0 / $0</div>
+              </div>
+            </div>
 
-        <div class="school-and-rocket-project">
-          <div class="school">
-            <img
-              src="assets\img\Children studying at Mantapala refugee settlement, in northern Zambia  1.png"
-              alt="Keep Children in School"
-              class="school-and-rocket-project"
-            />
-            <p>Keep Otim and Ocen in school</p>
-            <div class="progress-container">
-              <div class="progress-bar" id="progress-bar1"></div>
-              <span class="goal-label" id="goal-label"></span>
-              <div id="progress-info1">$0 / $0</div>
+            <div class="rocket-project">
+              <img
+                src="assets\img\rocket.png"
+                alt="Onen's Rocket Project"
+                class="school-and-rocket-project"
+              />
+              <p>Fund Onen’s Rocket Project</p>
+
+              <div class="progress-container">
+                <div class="progress-bar" id="progress-bar2"></div>
+                <span class="goal-label" id="goal-label"></span>
+                <div id="progress-info2" class="progress-info">$0 / $0</div>
+              </div>
             </div>
           </div>
 
-          <div class="rocket-project">
-            <img
-              src="assets\img\rocket.png"
-              alt="Onen's Rocket Project"
-              class="school-and-rocket-project"
-            />
-            <p>Fund Onen’s Rocket Project</p>
+          <div class="school-and-rocket-project">
+            <div class="school">
+              <img
+                src="assets\img\Children studying at Mantapala refugee settlement, in northern Zambia  1.png"
+                alt="Keep Children in School"
+                class="school-and-rocket-project"
+              />
+              <p>Keep Otim and Ocen in school</p>
+              <div class="progress-container">
+                <div class="progress-bar" id="progress-bar1"></div>
+                <span class="goal-label" id="goal-label"></span>
+                <div id="progress-info1" class="progress-info">$0 / $0</div>
+              </div>
+            </div>
 
-            <div class="progress-container">
-              <div class="progress-bar" id="progress-bar2"></div>
-              <span class="goal-label" id="goal-label"></span>
-              <div id="progress-info2">$0 / $0</div>
+            <div class="rocket-project">
+              <img
+                src="assets\img\rocket.png"
+                alt="Onen's Rocket Project"
+                class="school-and-rocket-project"
+              />
+              <p>Fund Onen’s Rocket Project</p>
+
+              <div class="progress-container">
+                <div class="progress-bar" id="progress-bar2"></div>
+                <span class="goal-label" id="goal-label"></span>
+                <div id="progress-info2" class="progress-info">$0 / $0</div>
+              </div>
             </div>
           </div>
         </div>
@@ -224,7 +266,11 @@ section {
           <button class="number-btn">1</button>
         </div>
         <div class="picture-and-paragraph">
-          <img src="assets\img\secure.png" alt="Secure Transactions" />
+          <img
+            src="assets\img\secure.png"
+            alt="Secure Transactions"
+            class="transactions-donars-easy"
+          />
           <p class="paragrapghs">Secure Transactions</p>
         </div>
       </div>
@@ -237,6 +283,7 @@ section {
           <img
             src="assets\img\shareLinkToDonars.png"
             alt="Share links to Donars"
+            class="transactions-donars-easy"
           />
           <p class="paragrapghs">Share links to Donars</p>
         </div>
@@ -247,11 +294,11 @@ section {
           <button class="number-btn">3</button>
         </div>
         <div>
-          <div id="easy-to-you-img-div">
+          <div>
             <img
-              src="assets\img\easy.png"
+              src="help-a-helper-website\assets\img\easy-to-you.png"
               alt="Easy To Share"
-              id="easy-to-you-img"
+              class="transactions-donars-easy"
             />
           </div>
           <p class="paragrapghs">Easy To You</p>
@@ -263,7 +310,7 @@ section {
       <div>
         <h1 class="urgent-cause-heading">Urgent Cause</h1>
         <img
-          id="kasasira"
+          id="kasasira-urgent-cause"
           src="assets\img\kasasira.png"
           alt="kasasira's picture"
         />
@@ -281,7 +328,7 @@ section {
         <div class="progress-container" id="progress-container">
           <div class="progress-bar" id="progress-bar3"></div>
           <span class="goal-label" id="goal-label"></span>
-          <div id="progress-info3">$0 / $0</div>
+          <div id="progress-info3" class="progress-info">$0 / $0</div>
         </div>
       </div>
     </div>
@@ -455,8 +502,7 @@ section {
         }
       });
 
-
-            // Add class to start animation when element is in view
+      // Add class to start animation when element is in view
       document.addEventListener("DOMContentLoaded", () => {
         const elements = document.querySelectorAll(".fundraising-ideas-divs");
 
@@ -473,7 +519,6 @@ section {
 
         elements.forEach((el) => observer.observe(el));
       });
-
     </script>
   </body>
 </html>
