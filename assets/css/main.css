@@ -79,6 +79,7 @@ margin-left: 30px
 }
   
 .container {
+    
     display: flex;
     justify-content: center; 
     align-items: center;     
@@ -87,6 +88,7 @@ margin-left: 30px
 }
 
 .empower-change{
+    margin-bottom: 100px;
 width: 300px;
 height: 300px;
 border-radius: 600px;
@@ -206,6 +208,7 @@ gap: 30px;
     border-radius: 25px;
     text-wrap: nowrap;
     padding:10px;
+    margin-right: 10px;
 }
 
 #church{
@@ -216,6 +219,7 @@ gap: 30px;
     border-radius: 25px;
     text-wrap: nowrap;
     padding:10px;  
+    
 }
 
 
@@ -223,12 +227,15 @@ gap: 30px;
 .medical-church-img{
     width: 50px;
     height: 50px;
+   margin-left: -20px;
 
 }
-
+#emergency {
+   margin-right: 10px;
+  }
 
 #medical-support-and-church-container{
-gap: 510px;
+gap: 400px;
 justify-content: center;
 align-items: center;
 }
@@ -804,3 +811,69 @@ width: 30%;
   #transaction-fee-paragraph{
     max-width: 40%;
   }
+
+
+
+
+  /* animations */
+  /* Keyframes for Animations */
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  /* Apply Animation */
+  .fundraising-ideas-divs {
+    animation: slideIn 1s ease-out;
+    opacity: 0; /* Start hidden */
+    animation-fill-mode: forwards; /* Ensure it stays in the end state */
+  }
+  
+  /* Staggered Animation */
+  #child-support {
+    animation-delay: 0.1s;
+  }
+  
+  #tuition-fundraising {
+    animation-delay: 0.2s;
+  }
+  
+  #medical-support {
+    animation-delay: 0.3s;
+  }
+  
+  #church {
+    animation-delay: 0.4s;
+  }
+  
+  #birthdays {
+    animation-delay: 0.5s;
+  }
+  
+  #emergency {
+    animation-delay: 0.6s;
+  }
+  
+  /* Image Bounce Animation */
+  .medical-church-img {
+    animation: bounce 2s infinite;
+  }
+  
