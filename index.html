@@ -152,7 +152,8 @@ section {
                   alt="Church"
                   class="medical-church-img"
                 />
-                <div id="church" class="fundraising-ideas-divs">Church</div>
+                <div id="emergency" class="fundraising-ideas-divs">Emergency</div>
+                
               </div>
             </div>
 
@@ -161,7 +162,7 @@ section {
               class="fundraising-ideas-container"
             >
               <div id="birthdays" class="fundraising-ideas-divs">Birthdays</div>
-              <div id="emergency" class="fundraising-ideas-divs">Emergency</div>
+              <div id="church" class="fundraising-ideas-divs">Church</div>
             </div>
           </div>
         </div>
@@ -452,6 +453,26 @@ section {
           }, 300);
         }
       });
+
+
+            // Add class to start animation when element is in view
+      document.addEventListener("DOMContentLoaded", () => {
+        const elements = document.querySelectorAll(".fundraising-ideas-divs");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.style.opacity = "1"; // Ensure it's visible
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+
+        elements.forEach((el) => observer.observe(el));
+      });
+
     </script>
   </body>
 </html>
