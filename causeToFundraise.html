@@ -44,20 +44,19 @@
   </head>
 
   <style>
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden; 
-}
-
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
   </style>
   <body>
     <section id="cause-to-fundraise-section">
       <div class="overlay"></div>
 
       <div class="image-container">
-        
         <img
           src="assets\img\fundraise.png"
           alt="fundraise"
@@ -75,103 +74,74 @@ body, html {
           What best describes your cause or reason to fundraise
         </h1>
 
-        <div id="reasons-t0-fundraise">
-          <input
-            type="radio"
-            id="education"
-            name="fundraisingReason"
-            class="d-none"
-          />
+        <div id="reasons-to-fundraise">
+          <input type="radio" id="education" name="education" class="d-none" />
           <label for="education" class="category-radio-label">Education</label>
 
           <input
             type="radio"
             id="medical-support"
-            name="fundraising-reason"
+            name="medical support"
             class="d-none"
           />
-          <label for="healthcare" class="category-radio-label"
+          <label for="medical support" class="category-radio-label"
             >Medical Support</label
           >
 
           <input
             type="radio"
             id="environment"
-            name="fundraising-reason"
+            name="environment"
             class="d-none"
           />
           <label for="environment" class="category-radio-label"
             >Environment</label
           >
 
-          <input
-            type="radio"
-            id="community"
-            name="fundraising-reason"
-            class="d-none"
-          />
-          <label for="animals" class="category-radio-label">Community</label>
+          <input type="radio" id="community" name="community" class="d-none" />
+          <label for="community" class="category-radio-label">Community</label>
 
-          <input
-            type="radio"
-            id="wedding"
-            name="fundraising-reason"
-            class="d-none"
-          />
-          <label for="community" class="category-radio-label">Wedding</label>
+          <input type="radio" id="wedding" name="wedding" class="d-none" />
+          <label for="wedding" class="category-radio-label">Wedding</label>
 
-          <input
-            type="radio"
-            id="tuition"
-            name="fundraising-reason"
-            class="d-none"
-          />
-          <label for="emergency" class="category-radio-label">Tuition</label>
+          <input type="radio" id="tuition" name="tuition" class="d-none" />
+          <label for="tuition" class="category-radio-label">Tuition</label>
 
-          <input
-            type="radio"
-            id="birthdays"
-            name="fundraising-reason"
-            class="d-none"
-          />
-          <label for="emergency" class="category-radio-label">Birthdays</label>
+          <input type="radio" id="birthdays" name="birthdays" class="d-none" />
+          <label for="birthdays" class="category-radio-label">Birthdays</label>
 
-          <input
-            type="radio"
-            id="church"
-            name="fundraising-reason"
-            class="d-none"
-          />
-          <label for="emergency" class="category-radio-label">Church</label>
+          <input type="radio" id="church" name="church" class="d-none" />
+          <label for="church" class="category-radio-label">Church</label>
 
-          <input
-            type="radio"
-            id="emergency"
-            name="fundraising-reason"
-            class="d-none"
-          />
+          <input type="radio" id="emergency" name="emergency" class="d-none" />
           <label for="emergency" class="category-radio-label">Emergency</label>
 
           <input
             type="radio"
             id="funeral-support"
-            name="fundraising-reason"
+            name="funeral support"
             class="d-none"
           />
-          <label for="emergency" class="category-radio-label"
+          <label for="funeral support" class="category-radio-label"
             >Funeral Support</label
           >
         </div>
 
         <div>
-          <h1 class="fundraise-headings">Where are you From</h1>
+          <h1 class="fundraise-headings">Where are you from</h1>
           <p>
             Let us know where you are from or plan to withdraw your funds from
           </p>
 
           <div>
-            <input type="text" placeholder="Your location" class="your-location" />
-            <button id="right-arrow-btn"><i class="bi bi-arrow-right" id="arrow"></i></button>
+            <input
+              type="text"
+              placeholder="Your location"
+              class="your-location"
+            />
+            <button id="right-arrow-btn">
+              <i class="bi bi-arrow-right" id="arrow"></i>
+            </button>
           </div>
         </div>
       </div>
