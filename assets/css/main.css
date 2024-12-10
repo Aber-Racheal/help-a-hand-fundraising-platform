@@ -943,3 +943,29 @@ width: 30%;
     animation: bounce 2s infinite;
   }
   
+
+
+
+
+
+
+
+
+  /* sign up and login */
+
+  .helpahelper-form{
+    background-color: #3DD251;
+    width: 150px;
+    height: 40px;
+    border: solid 2px #3DD251;
+    border-radius: 59px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 45%;
+    margin-top: 20px;
+    transform: translate(-40%, -50%);
+  }
