@@ -45,7 +45,7 @@
     <style>
       /* Background Image */
       .bg-image {
-        background-image: url('assets\img\charity.png');
+        background-image: url("assets\img\charity.png");
         background-size: cover;
         background-position: center;
         height: 100vh;
@@ -114,7 +114,6 @@
         margin-bottom: 15px;
       }
 
-
       .form-links {
         display: flex;
         justify-content: space-between;
@@ -141,7 +140,11 @@
         >
           <div class="card p-4 shadow form-container">
             <!-- Logo at the top -->
-            <a href="#" id="help-a-helper-login" class="helpahelper-form">
+            <a
+              href="index.html"
+              id="help-a-helper-login"
+              class="helpahelper-form"
+            >
               <img
                 id="logo-in-nav-helper"
                 src="assets/img/giveahandLogo.png"
@@ -149,35 +152,79 @@
               />
               HelpaHelper
             </a>
-
-            <form onsubmit="return valid_datas(this)">
+            <!-- <?php if ($is_invalid): ?>
+            <em>Invalid login</em>
+            <?php endif; ?> -->
+            <form method="post" action="login.php">
               <div class="mb-3">
                 <input
                   type="email"
                   class="form-control"
                   id="email"
+                  name="email"
                   placeholder="Email"
                   required
                 />
                 <div class="mb-3">
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="password"
-                    placeholder="Password"
-                    required
-                  />
+                  <div class="input-group" style="position: relative">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      name="password"
+                      placeholder="Password"
+                      style="padding-right: 30px"
+                    />
+                    <i
+                      class="fas fa-eye"
+                      id="eyeIcon"
+                      style="
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        cursor: pointer;
+                      "
+                    ></i>
+                  </div>
                 </div>
               </div>
+
+              <!-- <?php if (isset($is_invalid) && $is_invalid): ?>
+              <div class="alert alert-danger">
+                Invalid login credentials. Please try again.
+              </div>
+              <?php endif; ?> -->
               <button type="submit" class="btn btn-signup w-100">Login</button>
             </form>
             <div class="form-links">
-              <a href="#" id="forgot-password">Forgot Password?</a>
-              <a href="#" id="sign-up">Sign Up</a>
+              <!-- Inside your login.html file -->
+              <a href="forgot-password.php" id="forgot-password"
+                >Forgot Password?</a
+              >
+
+              <a href="sign-up.html" id="sign-up">Sign Up</a>
             </div>
           </div>
         </div>
       </div>
     </section>
   </body>
+
+  <script>
+    // Function to toggle password visibility
+    document.getElementById("eyeIcon").addEventListener("click", function () {
+      const passwordField = document.getElementById("password");
+      const eyeIcon = document.getElementById("eyeIcon");
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+      } else {
+        passwordField.type = "password";
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
+      }
+    });
+  </script>
 </html>
