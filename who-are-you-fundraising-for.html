@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+
+    <!-- title -->
+    <title>HelpaHelper</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="" />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" />
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!-- animate css -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!-- mean menu css -->
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css" />
+    <!-- main style -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Global Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Body styling for balanced margin and padding */
+      body {
+        margin-left: auto;
+        margin-right: auto;
+
+        /* Optional: Set a max width to prevent overflow */
+      }
+
+      /* Hide the actual radio button */
+      input[type="radio"].d-none {
+        display: none;
+      }
+
+      /* Make the label clickable */
+      .fundraise-for-label {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.3s ease;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      /* When the radio button is checked, highlight the label */
+      input[type="radio"]:checked + .fundraise-for-label {
+        background-color: #3dd251; /* Blue background when selected */
+        color: white; /* Change text color */
+        border: 1px solid #3dd251; /* Add a border */
+        border-radius: 60px;
+        height: auto;
+        padding: 1%;
+        margin-left: 0%;
+      }
+
+      /* Style for images inside the label */
+      .fundraise-for-imgs {
+        width: 100px; /* Adjust size as needed */
+        height: auto;
+      }
+
+      /* Styling the text under the image */
+      .fundraise-for-label p {
+        margin-top: 5px;
+        font-size: 14px;
+        margin-bottom: 0;
+      }
+
+      /* Optional: Add hover effect */
+      .fundraise-for-label:hover {
+        opacity: 0.8;
+      }
+
+      /* Optional: Add active effect when clicking */
+      .fundraise-for-label:active {
+        transform: scale(0.98); /* Slightly reduce the size when clicked */
+      }
+
+      #yourself-img {
+        height: 100px;
+
+        border-radius: 50%;
+      }
+
+
+
+      /* Hide the default file input */
+.upload-input {
+  display: none;
+}
+
+/* Style the custom button */
+.custom-upload-btn {
+  background-color: #3dd251; /* Blue background */
+  color: white; /* White text */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Style the camera icon */
+.custom-upload-btn i {
+  font-size: 20px;
+}
+
+/* Hover effect for the custom button */
+.custom-upload-btn:hover {
+  background-color: #3dd251;
+}
+
+
+/* Style the upload text */
+.upload-text {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  display: block;
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+      <a href="">
+        <img
+          id="logo-in-green-circle"
+          src="assets\img\logo.png"
+          alt="Organization Logo"
+        />
+      </a>
+      <div class="nav-items">
+        <ul style="list-style: none; padding: 0; margin: 0">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="funderaiser.html">Fundraiser</a></li>
+          <li>
+            <a href="" id="help-a-helper"
+              ><img
+                id="logo-in-nav-helper"
+                src="assets\img\giveahandLogo.png"
+                alt="logo"
+              />HelpaHelper</a
+            >
+          </li>
+          <li><i class="bi bi-search" id="search-icon"></i></li>
+
+          <li><a href="">Donate</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <a href="index.html">
+        <img
+          id="logo-in-green-circle"
+          src="assets\img\profile.png"
+          alt="Organization Logo"
+        />
+      </a>
+    </nav>
+
+    <div>
+      <input
+        type="text"
+        id="search-bar"
+        class="form-control search-bar-style"
+        placeholder="Search..."
+      />
+    </div>
+    <section class="cause-to-fundraise-section" id="cause-to-fundraise-section">
+      <div>
+        <img
+          src="assets\img\fundraiseHeartAndHands.png"
+          alt="fundraise"
+          id="fundraise-heart-and-hands"
+        />
+      </div>
+
+      <div id="fundraise-div">
+        <h1 class="fundraise-headings">Who are you fundraising for</h1>
+
+        <div id="who-fundraise">
+          <div class="fundraise-for">
+            <input
+              type="radio"
+              id="yourself"
+              name="fundraise-option"
+              value="Yourself"
+              class="d-none"
+            />
+            <label for="yourself" class="fundraise-for-label">
+              <img
+                src="assets/img/yourself.png"
+                alt="Yourself"
+                class="fundraise-for-imgs"
+                id="yourself-img"
+              />
+              <p>Yourself</p>
+            </label>
+          </div>
+
+          <div class="fundraise-for">
+            <input
+              type="radio"
+              id="charity-and-community"
+              name="fundraise-option"
+              value="Charity and Community"
+              class="d-none"
+            />
+            <label for="charity-and-community" class="fundraise-for-label">
+              <img
+                src="assets/img/charityAndCommImg.png"
+                alt="Charity and Community"
+                class="fundraise-for-imgs"
+              />
+              <p>Charity and Community</p>
+            </label>
+          </div>
+
+          <div class="fundraise-for">
+            <input
+              type="radio"
+              id="friends-family"
+              name="fundraise-option"
+              value="Family or Friends"
+              class="d-none"
+            />
+            <label for="friends-family" class="fundraise-for-label">
+              <img
+                src="assets/img/friendsFamilyImg.png"
+                alt="Family or Friends"
+                class="fundraise-for-imgs"
+              />
+              <p>Family or Friends</p>
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <h1 class="fundraise-headings">What is your starting goal</h1>
+
+          <div>
+            <div class="input-group mb-3">
+              <!-- Currency Dropdown -->
+              <div class="input-group-prepend">
+                <select
+                  class="form-select"
+                  id="currency-select"
+                  aria-label="Currency"
+                >
+                  <option value="UGX">UGX</option>
+                  <option value="USD" selected>USD</option>
+                </select>
+              </div>
+              <!-- Amount Input -->
+              <input
+                type="number"
+                placeholder="Set a goal"
+                class="form-control set-a-goal-btn your-location"
+                id="set-a-goal-btn"
+                aria-label="Amount"
+              />
+            </div>
+
+            <p>You can change your goal later on</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="build-your-fundraise-profile">
+      <h1 class="fundraise-headings" id="build-fundraise-heading">
+        Build your fundraise profile
+      </h1>
+
+      <div id="image-and-donate">
+        <div id="image-and-btn">
+          <div class="upload-container" id="upload-area">
+
+            <div class="upload-btn-container">
+              <!-- Hidden file input -->
+              <input
+                type="file"
+                id="image-upload"
+                class="upload-input"
+                accept="image/*"
+              />
+              <!-- Custom button with camera icon -->
+              <label for="image-upload" class="custom-upload-btn">
+                <i class="fa fa-camera"></i> Upload Photo
+              </label>
+            </div>
+          </div>
+          <button id="submit-review" class="start-a-give-a-hand-btn">
+            Submit for review
+          </button>
+        </div>
+
+        <div id="title-and-story">
+          <div>
+            <h2 class="fundraise-headings">Your fundraiser title</h2>
+            <input
+              type="text"
+              placeholder="Donate to support ......."
+              class="your-location set-a-goal-btn"
+              id="donate-to-support-input"
+            />
+          </div>
+
+          <div>
+            <h2 class="fundraise-headings">Tell us your story</h2>
+            <textarea
+              rows="10"
+              cols="50"
+              placeholder="Type..."
+              id="type-a-story"
+              class="upload-container"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const uploadArea = document.getElementById("upload-area");
+      const fileInput = document.getElementById("image-upload");
+      const previewImage = document.getElementById("preview-image");
+      const uploadText = document.querySelector(".upload-iext");
+
+      uploadArea.addEventListener("click", () => fileInput.click());
+
+      uploadArea.addEventListener("dragover", (event) => {
+        event.preventDefault();
+        uploadArea.classList.add("hover");
+      });
+
+      uploadArea.addEventListener("dragleave", () => {
+        uploadArea.classList.remove("hover");
+      });
+
+      uploadArea.addEventListener("drop", (event) => {
+        event.preventDefault();
+        uploadArea.classList.remove("hover");
+        const file = event.dataTransfer.files[0];
+        if (file) {
+          fileInput.files = event.dataTransfer.files;
+          showImagePreview(file);
+        }
+      });
+
+      fileInput.addEventListener("change", () => {
+        const file = fileInput.files[0];
+        if (file) {
+          showImagePreview(file);
+        }
+      });
+
+      function showImagePreview(file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          previewImage.src = e.target.result;
+          previewImage.style.display = "block";
+          uploadText.style.display = "none";
+        };
+        reader.readAsDataURL(file);
+      }
+    </script>
+  </body>
+</html>

@@ -44,67 +44,64 @@
   </head>
 
   <style>
-body, html {
-  margin: 0;
-  padding: 0;
-
-  
-}
-
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+    }
   </style>
   <body>
-       <!-- Navigation Menu -->
-       <nav class="navbar">
-        <a href="">
-          <img
-            id="logo-in-green-circle"
-            src="assets\img\logo.png"
-            alt="Organization Logo"
-          />
-        </a>
-        <div class="nav-items">
-          <ul style="list-style: none; padding: 0; margin: 0">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="funderaiser.html">Fundraiser</a></li>
-            <li>
-              <a href="" id="help-a-helper"
-                ><img
-                  id="logo-in-nav-helper"
-                  src="assets\img\giveahandLogo.png"
-                  alt="logo"
-                />HelpaHelper</a
-              >
-            </li>
-            <li><i class="bi bi-search" id="search-icon"></i></li>
-  
-            <li><a href="">Donate</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </div>
-        <a href="">
-          <img
-            id="logo-in-green-circle"
-            src="assets\img\profile.png"
-            alt="Organization Logo"
-          />
-        </a>
-      </nav>
-  
-      <div>
-        <input
-          type="text"
-          id="search-bar"
-          class="form-control search-bar-style"
-          placeholder="Search..."
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+      <a href="">
+        <img
+          id="logo-in-green-circle"
+          src="assets\img\logo.png"
+          alt="Organization Logo"
         />
+      </a>
+      <div class="nav-items">
+        <ul style="list-style: none; padding: 0; margin: 0">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="funderaiser.html">Fundraiser</a></li>
+          <li>
+            <a href="" id="help-a-helper"
+              ><img
+                id="logo-in-nav-helper"
+                src="assets\img\giveahandLogo.png"
+                alt="logo"
+              />HelpaHelper</a
+            >
+          </li>
+          <li><i class="bi bi-search" id="search-icon"></i></li>
+
+          <li><a href="">Donate</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
       </div>
-      <!--  Empower Change Section  -->
-  
+      <a href="">
+        <img
+          id="logo-in-green-circle"
+          src="assets\img\profile.png"
+          alt="Organization Logo"
+        />
+      </a>
+    </nav>
+
+    <div>
+      <input
+        type="text"
+        id="search-bar"
+        class="form-control search-bar-style"
+        placeholder="Search..."
+      />
+    </div>
+    <!--  Empower Change Section  -->
+
     <section id="cause-to-fundraise-section">
       <div class="overlay"></div>
 
       <div class="image-container">
-        
         <img
           src="assets\img\fundraise.png"
           alt="fundraise"
@@ -122,11 +119,11 @@ body, html {
           What best describes your cause or reason to fundraise
         </h1>
 
-        <div id="reasons-t0-fundraise">
+        <div id="reasons-to-fundraise">
           <input
             type="radio"
             id="education"
-            name="fundraisingReason"
+            name="fundraising-reason"
             class="d-none"
           />
           <label for="education" class="category-radio-label">Education</label>
@@ -137,7 +134,7 @@ body, html {
             name="fundraising-reason"
             class="d-none"
           />
-          <label for="healthcare" class="category-radio-label"
+          <label for="medical-support" class="category-radio-label"
             >Medical Support</label
           >
 
@@ -157,7 +154,7 @@ body, html {
             name="fundraising-reason"
             class="d-none"
           />
-          <label for="animals" class="category-radio-label">Community</label>
+          <label for="community" class="category-radio-label">Community</label>
 
           <input
             type="radio"
@@ -165,7 +162,7 @@ body, html {
             name="fundraising-reason"
             class="d-none"
           />
-          <label for="community" class="category-radio-label">Wedding</label>
+          <label for="wedding" class="category-radio-label">Wedding</label>
 
           <input
             type="radio"
@@ -173,7 +170,7 @@ body, html {
             name="fundraising-reason"
             class="d-none"
           />
-          <label for="emergency" class="category-radio-label">Tuition</label>
+          <label for="tuition" class="category-radio-label">Tuition</label>
 
           <input
             type="radio"
@@ -181,7 +178,7 @@ body, html {
             name="fundraising-reason"
             class="d-none"
           />
-          <label for="emergency" class="category-radio-label">Birthdays</label>
+          <label for="birthdays" class="category-radio-label">Birthdays</label>
 
           <input
             type="radio"
@@ -189,7 +186,7 @@ body, html {
             name="fundraising-reason"
             class="d-none"
           />
-          <label for="emergency" class="category-radio-label">Church</label>
+          <label for="church" class="category-radio-label">Church</label>
 
           <input
             type="radio"
@@ -205,7 +202,7 @@ body, html {
             name="fundraising-reason"
             class="d-none"
           />
-          <label for="emergency" class="category-radio-label"
+          <label for="funeral-support" class="category-radio-label"
             >Funeral Support</label
           >
         </div>
@@ -217,58 +214,162 @@ body, html {
           </p>
 
           <div>
-            <input type="text" placeholder="Your location" class="your-location" />
-            <a href="who.html"><button id="right-arrow-btn"><i class="bi bi-arrow-right" id="arrow"></i></button></a>
+            <input
+              type="text"
+              placeholder="Your location"
+              class="your-location"
+            />
+            <a href="who-are-you-fundraising-for.html"
+              ><button id="right-arrow-btn">
+                <i class="bi bi-arrow-right" id="arrow"></i></button
+            ></a>
           </div>
         </div>
       </div>
     </section>
 
-    <footer style="background-color: #dffee3; color: #000000; padding: 40px 20px; font-family: Arial, sans-serif;">
-      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto;">
-          <!-- About Section -->
-          <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
-              <h3 style="border-bottom: 2px solid #000000; display: inline-block; padding-bottom: 5px;">About Us</h3>
-              <p style="font-size: 14px; line-height: 1.6;">We craft natural products for wellness and self-care, inspired by nature and designed for your comfort and nourishment. Explore our collection today!</p>
-          </div>
-  
-          <!-- Quick Links Section -->
-          <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
-              <h3 style="border-bottom: 2px solid #000000; display: inline-block; padding-bottom: 5px;">Quick Links</h3>
-              <ul style="list-style: none; padding: 0; font-size: 14px; line-height: 1.8;">
-                  <li><a href="#" style="color: #000000; text-decoration: none;">Home</a></li>
-                  <li><a href="#" style="color: #000000; text-decoration: none;">Shop</a></li>
-                  <li><a href="#" style="color: #000000; text-decoration: none;">Blog</a></li>
-                  <li><a href="#" style="color: #000000; text-decoration: none;">Contact</a></li>
-                  <li><a href="#" style="color: #000000; text-decoration: none;">FAQs</a></li>
-              </ul>
-          </div>
-  
-          <!-- Contact Section -->
-          <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
-              <h3 style="border-bottom: 2px solid #000000; display: inline-block; padding-bottom: 5px;">Contact Us</h3>
-              <p style="font-size: 14px; line-height: 1.6;">Email: support@example.com</p>
-              <p style="font-size: 14px; line-height: 1.6;">Phone: +123 456 7890</p>
-              <p style="font-size: 14px; line-height: 1.6;">Address: 123 Wellness Lane, Nature City</p>
-          </div>
+    <footer
+      style="
+        background-color: #dffee3;
+        color: #000000;
+        padding: 40px 20px;
+        font-family: Arial, sans-serif;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          max-width: 1200px;
+          margin: auto;
+        "
+      >
+        <!-- About Section -->
+        <div style="flex: 1; min-width: 200px; margin-bottom: 20px">
+          <h3
+            style="
+              border-bottom: 2px solid #000000;
+              display: inline-block;
+              padding-bottom: 5px;
+            "
+          >
+            About Us
+          </h3>
+          <p style="font-size: 14px; line-height: 1.6">
+            We craft natural products for wellness and self-care, inspired by
+            nature and designed for your comfort and nourishment. Explore our
+            collection today!
+          </p>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div style="flex: 1; min-width: 200px; margin-bottom: 20px">
+          <h3
+            style="
+              border-bottom: 2px solid #000000;
+              display: inline-block;
+              padding-bottom: 5px;
+            "
+          >
+            Quick Links
+          </h3>
+          <ul
+            style="
+              list-style: none;
+              padding: 0;
+              font-size: 14px;
+              line-height: 1.8;
+            "
+          >
+            <li>
+              <a href="#" style="color: #000000; text-decoration: none">Home</a>
+            </li>
+            <li>
+              <a href="#" style="color: #000000; text-decoration: none">Shop</a>
+            </li>
+            <li>
+              <a href="#" style="color: #000000; text-decoration: none">Blog</a>
+            </li>
+            <li>
+              <a href="#" style="color: #000000; text-decoration: none"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a href="#" style="color: #000000; text-decoration: none">FAQs</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div style="flex: 1; min-width: 200px; margin-bottom: 20px">
+          <h3
+            style="
+              border-bottom: 2px solid #000000;
+              display: inline-block;
+              padding-bottom: 5px;
+            "
+          >
+            Contact Us
+          </h3>
+          <p style="font-size: 14px; line-height: 1.6">
+            Email: support@example.com
+          </p>
+          <p style="font-size: 14px; line-height: 1.6">Phone: +123 456 7890</p>
+          <p style="font-size: 14px; line-height: 1.6">
+            Address: 123 Wellness Lane, Nature City
+          </p>
+        </div>
       </div>
-  
-      <div style="text-align: center; margin-top: 20px;">
-          <!-- Social Media Links -->
-          <a href="#" style="margin: 0 10px; color: #000000; font-size: 20px; text-decoration: none;">
-              <i class="fab fa-facebook"></i>
-          </a>
-          <a href="#" style="margin: 0 10px; color: #000000; font-size: 20px; text-decoration: none;">
-              <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#" style="margin: 0 10px; color: #000000; font-size: 20px; text-decoration: none;">
-              <i class="fab fa-instagram"></i>
-          </a>
+
+      <div style="text-align: center; margin-top: 20px">
+        <!-- Social Media Links -->
+        <a
+          href="#"
+          style="
+            margin: 0 10px;
+            color: #000000;
+            font-size: 20px;
+            text-decoration: none;
+          "
+        >
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a
+          href="#"
+          style="
+            margin: 0 10px;
+            color: #000000;
+            font-size: 20px;
+            text-decoration: none;
+          "
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="#"
+          style="
+            margin: 0 10px;
+            color: #000000;
+            font-size: 20px;
+            text-decoration: none;
+          "
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
-  
-      <div style="text-align: center; margin-top: 20px; font-size: 14px; opacity: 0.8;">
-          © 2024 KQHAH Therapy. All rights reserved.
+
+      <div
+        style="
+          text-align: center;
+          margin-top: 20px;
+          font-size: 14px;
+          opacity: 0.8;
+        "
+      >
+        © 2024 KQHAH Therapy. All rights reserved.
       </div>
-  </footer>
+    </footer>
   </body>
 </html>
