@@ -1,7 +1,7 @@
 <?php
 
 $host = "localhost";
-$dbname = "help_a_hand_db";
+$dbname = "fundraiser";
 $username = "root";
 $password = "";
 
